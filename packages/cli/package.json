@@ -6,13 +6,5 @@
   "author": "David Meents <david@allido.io>",
   "bin": {
     "pico": "./dist/index.js"
-  },
-  "scripts": {
-    "dev": "",
-    "test": "",
-    "publish": ""
-  },
-  "devDependencies": {
-    "typescript": "^4.7.4"
   }
 }
