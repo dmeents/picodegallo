@@ -1,0 +1,14 @@
+{
+  "name": "picodegallo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dmeents/picodegallo.git",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "author": "David Meents <david@allido.io>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.1"
+}
