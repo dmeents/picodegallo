@@ -713,6 +713,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/validate-npm-package-name@npm:^4":
+  version: 4.0.0
+  resolution: "@types/validate-npm-package-name@npm:4.0.0"
+  checksum: 09efd659f4cce362931a57c7ee6d645855c7ecb346c6496ef31bab638e578472f779c77233adad8502e90a7d7a146a40a5029ff9c4739a38a4187ef1fe7187c3
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:5.30.6":
   version: 5.30.6
   resolution: "@typescript-eslint/eslint-plugin@npm:5.30.6"
@@ -4560,6 +4567,7 @@ __metadata:
     "@semantic-release/github": 8.0.5
     "@semantic-release/npm": 9.0.1
     "@types/semver": ^7
+    "@types/validate-npm-package-name": ^4
     "@typescript-eslint/eslint-plugin": 5.30.6
     "@typescript-eslint/parser": 5.30.6
     eslint: 8.19.0
@@ -4580,6 +4588,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     semver: ^7.3.7
     typescript: 4.7.4
+    validate-npm-package-name: ^4.0.0
   dependenciesMeta:
     eslint@8.19.0:
       unplugged: true

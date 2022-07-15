@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
             ["@types/semver", "npm:7.3.10"],\
+            ["@types/validate-npm-package-name", "npm:4.0.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["eslint", "npm:8.19.0"],\
@@ -62,7 +63,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.0.5"],\
             ["semver", "npm:7.3.7"],\
-            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"],\
+            ["validate-npm-package-name", "npm:4.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -920,6 +922,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-semver-npm-7.3.10-bcda8eb925-7047c2822b.zip/node_modules/@types/semver/",\
           "packageDependencies": [\
             ["@types/semver", "npm:7.3.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/validate-npm-package-name", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/@types-validate-npm-package-name-npm-4.0.0-0a37928601-09efd659f4.zip/node_modules/@types/validate-npm-package-name/",\
+          "packageDependencies": [\
+            ["@types/validate-npm-package-name", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5542,6 +5553,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
             ["@types/semver", "npm:7.3.10"],\
+            ["@types/validate-npm-package-name", "npm:4.0.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["eslint", "npm:8.19.0"],\
@@ -5561,7 +5573,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.0.5"],\
             ["semver", "npm:7.3.7"],\
-            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"],\
+            ["validate-npm-package-name", "npm:4.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
