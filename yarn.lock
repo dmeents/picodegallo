@@ -494,7 +494,7 @@ __metadata:
     "@semantic-release/github": 8.0.5
     "@semantic-release/npm": 9.0.1
     "@types/rimraf": 3.0.2
-    "@types/semver": ^7
+    "@types/semver": 7.3.10
     chalk: ^5.0.1
     commander: ^9.3.0
     rimraf: 3.0.2
@@ -707,7 +707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/semver@npm:^7":
+"@types/semver@npm:7.3.10":
   version: 7.3.10
   resolution: "@types/semver@npm:7.3.10"
   checksum: 7047c2822b1759b2b950f39cfcf261f2b9dca47b4b55bdebba0905a8553631f1531eb0f59264ffe4834d1198c8331c8e0010a4cd742f4e0b60abbf399d134364
