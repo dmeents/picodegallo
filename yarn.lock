@@ -72,15 +72,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.0.6":
-  version: 1.0.6
-  resolution: "@dmeents/maestro@npm:1.0.6"
+"@dmeents/maestro@npm:1.0.7":
+  version: 1.0.7
+  resolution: "@dmeents/maestro@npm:1.0.7"
   dependencies:
     lodash: ^4.17.21
   dependenciesMeta:
     eslint@8.19.0:
       unplugged: true
-  checksum: 71e1ff3e7ecc0f0163a047226bfec2508990fa463e4c10fee06589697246374ff2d291427694defaf0319f6dc920b1df7ce717a211e2e6ff3cc2263c09e0e0e6
+  checksum: 31789e930fd7eac5d52dd083c65ca9c42ec8d9f19c8909d5fb16be9bf37a937b77eadf063909bb8b7bf799e93ddf2c86a126ed98329d9e41ed0f238f4ef4662d
   languageName: node
   linkType: hard
 
@@ -4547,7 +4547,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.0.6
+    "@dmeents/maestro": 1.0.7
     "@typescript-eslint/eslint-plugin": 5.30.6
     "@typescript-eslint/parser": 5.30.6
     eslint: 8.19.0
