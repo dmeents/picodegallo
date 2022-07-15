@@ -4574,6 +4574,7 @@ __metadata:
     eslint-plugin-react-hooks: 4.6.0
     npmlog: ^6.0.2
     prettier: 2.7.1
+    proc-log: ^2.0.1
     rimraf: 3.0.2
     semantic-release: 19.0.3
     semantic-release-monorepo: 7.0.5
