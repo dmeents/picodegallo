@@ -599,7 +599,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^10.0.0":
+"@semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.3":
   version: 10.0.3
   resolution: "@semantic-release/release-notes-generator@npm:10.0.3"
   dependencies:
@@ -699,13 +699,6 @@ __metadata:
     "@types/glob": "*"
     "@types/node": "*"
   checksum: b47fa302f46434cba704d20465861ad250df79467d3d289f9d6490d3aeeb41e8cb32dd80bd1a8fd833d1e185ac719fbf9be12e05ad9ce9be094d8ee8f1405347
-  languageName: node
-  linkType: hard
-
-"@types/validate-npm-package-name@npm:^4":
-  version: 4.0.0
-  resolution: "@types/validate-npm-package-name@npm:4.0.0"
-  checksum: 09efd659f4cce362931a57c7ee6d645855c7ecb346c6496ef31bab638e578472f779c77233adad8502e90a7d7a146a40a5029ff9c4739a38a4187ef1fe7187c3
   languageName: node
   linkType: hard
 
@@ -4552,10 +4545,11 @@ __metadata:
   resolution: "picodegallo@workspace:."
   dependencies:
     "@dmeents/maestro": 1.0.7
+    "@semantic-release/commit-analyzer": ^9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
     "@semantic-release/npm": 9.0.1
-    "@types/validate-npm-package-name": ^4
+    "@semantic-release/release-notes-generator": ^10.0.3
     "@typescript-eslint/eslint-plugin": 5.30.6
     "@typescript-eslint/parser": 5.30.6
     eslint: 8.19.0
