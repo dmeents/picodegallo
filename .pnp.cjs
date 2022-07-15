@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@dmeents/maestro", "npm:1.0.6"],\
+            ["@dmeents/maestro", "npm:1.0.7"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["eslint", "npm:8.19.0"],\
@@ -120,10 +120,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@dmeents/maestro", [\
-        ["npm:1.0.6", {\
-          "packageLocation": "./.yarn/cache/@dmeents-maestro-npm-1.0.6-248266c2ac-71e1ff3e7e.zip/node_modules/@dmeents/maestro/",\
+        ["npm:1.0.7", {\
+          "packageLocation": "./.yarn/cache/@dmeents-maestro-npm-1.0.7-69d668509c-31789e930f.zip/node_modules/@dmeents/maestro/",\
           "packageDependencies": [\
-            ["@dmeents/maestro", "npm:1.0.6"],\
+            ["@dmeents/maestro", "npm:1.0.7"],\
             ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "HARD"\
@@ -5529,7 +5529,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["picodegallo", "workspace:."],\
-            ["@dmeents/maestro", "npm:1.0.6"],\
+            ["@dmeents/maestro", "npm:1.0.7"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["eslint", "npm:8.19.0"],\
