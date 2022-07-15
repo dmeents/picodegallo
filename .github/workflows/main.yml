@@ -67,9 +67,6 @@ jobs:
           name: picodegallo-cli-build-${{ github.sha }}
           path: packages/cli/.dist
 
-      - name: Install semantic-release
-        run: npm install -g semantic-release
-
       - name: Release Package
         run: |
           git pull --rebase origin main
