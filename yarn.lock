@@ -475,6 +475,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
+    "@semantic-release/commit-analyzer": ^9.0.2
+    "@semantic-release/git": 10.0.1
+    "@semantic-release/github": 8.0.5
+    "@semantic-release/npm": 9.0.1
     "@types/rimraf": ^3
     chalk: ^5.0.1
     commander: ^9.3.0
@@ -4531,9 +4535,6 @@ __metadata:
   resolution: "picodegallo@workspace:."
   dependencies:
     "@dmeents/maestro": 1.0.6
-    "@semantic-release/git": 10.0.1
-    "@semantic-release/github": 8.0.5
-    "@semantic-release/npm": 9.0.1
     "@typescript-eslint/eslint-plugin": 5.30.6
     "@typescript-eslint/parser": 5.30.6
     eslint: 8.19.0
@@ -4548,7 +4549,6 @@ __metadata:
     eslint-plugin-react-hooks: 4.6.0
     prettier: 2.7.1
     rimraf: 3.0.2
-    semantic-release: 19.0.3
     typescript: 4.7.4
   dependenciesMeta:
     eslint@8.19.0:
