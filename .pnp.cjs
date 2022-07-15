@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
+            ["@types/semver", "npm:7.3.10"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["eslint", "npm:8.19.0"],\
@@ -54,10 +55,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.30.1"],\
             ["eslint-plugin-react-hooks", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.6.0"],\
+            ["npmlog", "npm:6.0.2"],\
             ["prettier", "npm:2.7.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.0.5"],\
+            ["semver", "npm:7.3.7"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -618,7 +621,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
             ["@types/rimraf", "npm:3.0.2"],\
-            ["@types/semver", "npm:7.3.10"],\
             ["chalk", "npm:5.0.1"],\
             ["commander", "npm:9.3.0"],\
             ["rimraf", "npm:3.0.2"],\
@@ -763,7 +765,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nerf-dart", "npm:1.0.0"],\
             ["normalize-url", "npm:6.1.0"],\
             ["npm", "npm:8.14.0"],\
-            ["npmlog", "npm:6.0.2"],\
             ["rc", "npm:1.2.8"],\
             ["read-pkg", "npm:5.2.0"],\
             ["registry-auth-token", "npm:4.2.2"],\
@@ -5539,6 +5540,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
+            ["@types/semver", "npm:7.3.10"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["eslint", "npm:8.19.0"],\
@@ -5551,10 +5553,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.30.1"],\
             ["eslint-plugin-react-hooks", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.6.0"],\
+            ["npmlog", "npm:6.0.2"],\
             ["prettier", "npm:2.7.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.0.5"],\
+            ["semver", "npm:7.3.7"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
