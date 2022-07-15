@@ -46,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/validate-npm-package-name", "npm:4.0.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
+            ["chalk", "npm:5.0.1"],\
             ["eslint", "npm:8.19.0"],\
             ["eslint-config-airbnb", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:19.0.4"],\
             ["eslint-config-airbnb-base", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:15.0.0"],\
@@ -5557,6 +5558,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/validate-npm-package-name", "npm:4.0.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
             ["@typescript-eslint/parser", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:5.30.6"],\
+            ["chalk", "npm:5.0.1"],\
             ["eslint", "npm:8.19.0"],\
             ["eslint-config-airbnb", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:19.0.4"],\
             ["eslint-config-airbnb-base", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:15.0.0"],\
