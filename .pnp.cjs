@@ -612,8 +612,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/cli/",\
           "packageDependencies": [\
             ["@picodegallo/cli", "workspace:packages/cli"],\
+            ["@types/rimraf", "npm:3.0.2"],\
             ["chalk", "npm:5.0.1"],\
             ["commander", "npm:9.3.0"],\
+            ["rimraf", "npm:3.0.2"],\
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:a0fb0de66e21393cfe7eb158f620d19479986cd5b22854326d67038ff394acbe2e082747881c0a0babe9f6098f7fb8d00ab0ac9f738423a3c041c20f2f29b5f5#npm:7.0.5"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
@@ -810,6 +812,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/glob", [\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/@types-glob-npm-7.2.0-772334bf9a-6ae717fedf.zip/node_modules/@types/glob/",\
+          "packageDependencies": [\
+            ["@types/glob", "npm:7.2.0"],\
+            ["@types/minimatch", "npm:3.0.5"],\
+            ["@types/node", "npm:18.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/json-schema", [\
         ["npm:7.0.11", {\
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.11-79462ae5ca-527bddfe62.zip/node_modules/@types/json-schema/",\
@@ -828,11 +841,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/minimatch", [\
+        ["npm:3.0.5", {\
+          "packageLocation": "./.yarn/cache/@types-minimatch-npm-3.0.5-802bb0797f-c41d136f67.zip/node_modules/@types/minimatch/",\
+          "packageDependencies": [\
+            ["@types/minimatch", "npm:3.0.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/minimist", [\
         ["npm:1.2.2", {\
           "packageLocation": "./.yarn/cache/@types-minimist-npm-1.2.2-a445de65da-b8da83c66e.zip/node_modules/@types/minimist/",\
           "packageDependencies": [\
             ["@types/minimist", "npm:1.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/node", [\
+        ["npm:18.0.4", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.0.4-19671c4a3f-981284fd57.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:18.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -860,6 +891,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-retry-npm-0.12.0-e4e6294a2c-61a072c763.zip/node_modules/@types/retry/",\
           "packageDependencies": [\
             ["@types/retry", "npm:0.12.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/rimraf", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/cache/@types-rimraf-npm-3.0.2-dd6eb5de99-b47fa302f4.zip/node_modules/@types/rimraf/",\
+          "packageDependencies": [\
+            ["@types/rimraf", "npm:3.0.2"],\
+            ["@types/glob", "npm:7.2.0"],\
+            ["@types/node", "npm:18.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\

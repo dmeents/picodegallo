@@ -12,6 +12,5 @@
     "lib": [ "esnext", "dom" ],
     "baseUrl": ".",
     "outDir": ".dist"
-  },
-  "include": [ "./packages/cli/src/**/*" ]
+  }
 }

@@ -2,7 +2,7 @@ name: main
 on: push
 
 jobs:
-  build:
+  build-cli:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,19 +27,19 @@ jobs:
       - name: Yarn Install
         run: yarn install
 
-      - name: Build Package
+      - name: Build all packages
         run: yarn build
 
-      - name: Save build artifact
+      - name: Save cli artifact
         uses: actions/upload-artifact@master
         with:
           if-no-files-found: ignore
-          name: picodegallo-build-${{ github.sha }}
-          path: .dist
+          name: picodegallo-cli-build-${{ github.sha }}
+          path: packages/cli/.dist
 
-  publish:
+  publish-cli:
     runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build-cli ]
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
@@ -64,10 +64,10 @@ jobs:
       - name: Get built artifact
         uses: actions/download-artifact@master
         with:
-          name: picodegallo-build-${{ github.sha }}
-          path: .dist
+          name: picodegallo-cli-build-${{ github.sha }}
+          path: packages/cli/.dist
 
       - name: Release Package
         run: |
           git pull --rebase origin main
-          NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn publish
+          NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn workspace @picodegallo/cli publish
