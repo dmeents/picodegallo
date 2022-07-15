@@ -1,16 +1,23 @@
 {
-  "name": "picodegallo",
+  "name": "@picodegallo/cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "types": "./.dist/index.d.ts",
+  "main": "./.dist/index.js",
+  "files": [
+    ".dist"
+  ],
   "repository": "https://github.com/dmeents/picodegallo.git",
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
   "author": "David Meents <david@allido.io>",
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
+  "bin": {
+    "pico": "./.dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "publish": "semantic-release"
+  },
   "dependenciesMeta": {
     "eslint@8.19.0": {
       "unplugged": true
@@ -37,5 +44,9 @@
     "rimraf": "3.0.2",
     "semantic-release": "19.0.3",
     "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0"
   }
 }
