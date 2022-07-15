@@ -17,7 +17,7 @@
     }
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.0.1",
+    "@dmeents/maestro": "1.0.6",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
     "@semantic-release/npm": "9.0.1",
