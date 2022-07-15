@@ -15,7 +15,7 @@
   "scripts": {
     "build": "rimraf .dist && tsc",
     "dev": "tsc -w",
-    "publish": "semantic-release --dry-run"
+    "publish": "semantic-release"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
