@@ -59,7 +59,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],\
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.0.5"],\
-            ["semver", "npm:7.3.7"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -765,6 +764,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nerf-dart", "npm:1.0.0"],\
             ["normalize-url", "npm:6.1.0"],\
             ["npm", "npm:8.14.0"],\
+            ["npmlog", "npm:6.0.2"],\
             ["rc", "npm:1.2.8"],\
             ["read-pkg", "npm:5.2.0"],\
             ["registry-auth-token", "npm:4.2.2"],\
@@ -5557,7 +5557,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],\
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.0.5"],\
-            ["semver", "npm:7.3.7"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
