@@ -58,15 +58,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@dmeents/maestro@npm:1.0.1"
+"@dmeents/maestro@npm:1.0.6":
+  version: 1.0.6
+  resolution: "@dmeents/maestro@npm:1.0.6"
   dependencies:
     lodash: ^4.17.21
   dependenciesMeta:
-    eslint:
+    eslint@8.19.0:
       unplugged: true
-  checksum: 4548e08e71264bce03c3f02e38faac962ed5b9fe33fe274d88d8ce2201da60c7c48b590f89495818fb800575f801037ea99d7ebf56f5d16bf9a12f5ad2c216cd
+  checksum: 71e1ff3e7ecc0f0163a047226bfec2508990fa463e4c10fee06589697246374ff2d291427694defaf0319f6dc920b1df7ce717a211e2e6ff3cc2263c09e0e0e6
   languageName: node
   linkType: hard
 
@@ -4408,7 +4408,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.0.1
+    "@dmeents/maestro": 1.0.6
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
     "@semantic-release/npm": 9.0.1
