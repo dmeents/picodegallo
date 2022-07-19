@@ -56,7 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.30.1"],\
             ["eslint-plugin-react-hooks", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.6.0"],\
-            ["npm-registry-fetch", "npm:13.2.0"],\
+            ["npm-registry-fetch", "npm:13.3.0"],\
             ["prettier", "npm:2.7.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
@@ -5183,6 +5183,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["proc-log", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:13.3.0", {\
+          "packageLocation": "./.yarn/cache/npm-registry-fetch-npm-13.3.0-fb52dd0de8-f153e471b7.zip/node_modules/npm-registry-fetch/",\
+          "packageDependencies": [\
+            ["npm-registry-fetch", "npm:13.3.0"],\
+            ["make-fetch-happen", "npm:10.1.8"],\
+            ["minipass", "npm:3.3.4"],\
+            ["minipass-fetch", "npm:2.1.0"],\
+            ["minipass-json-stream", "npm:1.0.1"],\
+            ["minizlib", "npm:2.1.2"],\
+            ["npm-package-arg", "npm:9.1.0"],\
+            ["proc-log", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["npm-run-path", [\
@@ -5638,7 +5652,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:7.30.1"],\
             ["eslint-plugin-react-hooks", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:4.6.0"],\
-            ["npm-registry-fetch", "npm:13.2.0"],\
+            ["npm-registry-fetch", "npm:13.3.0"],\
             ["prettier", "npm:2.7.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\

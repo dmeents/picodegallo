@@ -4055,6 +4055,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"npm-registry-fetch@npm:13.3.0":
+  version: 13.3.0
+  resolution: "npm-registry-fetch@npm:13.3.0"
+  dependencies:
+    make-fetch-happen: ^10.0.6
+    minipass: ^3.1.6
+    minipass-fetch: ^2.0.3
+    minipass-json-stream: ^1.0.1
+    minizlib: ^2.1.2
+    npm-package-arg: ^9.0.1
+    proc-log: ^2.0.0
+  checksum: f153e471b7204eef260d4b774087291981a0d2909db7568540d77759409300d10f8e2a464af0da15ab1c4da4d6285c5d746ba09707dd55a4bd66f5f0ceafcf64
+  languageName: node
+  linkType: hard
+
 "npm-registry-fetch@npm:^13.0.0, npm-registry-fetch@npm:^13.0.1, npm-registry-fetch@npm:^13.2.0":
   version: 13.2.0
   resolution: "npm-registry-fetch@npm:13.2.0"
@@ -4563,7 +4578,7 @@ __metadata:
     eslint-plugin-prettier: 4.2.1
     eslint-plugin-react: 7.30.1
     eslint-plugin-react-hooks: 4.6.0
-    npm-registry-fetch: ^13.2.0
+    npm-registry-fetch: 13.3.0
     prettier: 2.7.1
     rimraf: 3.0.2
     typescript: 4.7.4
