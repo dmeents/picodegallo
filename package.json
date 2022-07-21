@@ -9,7 +9,7 @@
   "repository": "https://github.com/dmeents/picodegallo.git",
   "author": "David Meents <david@allido.io>",
   "license": "MIT",
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "build": "yarn workspaces foreach -vpti run build"
   },
