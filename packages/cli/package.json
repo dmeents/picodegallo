@@ -1,6 +1,6 @@
 {
   "name": "@picodegallo/cli",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "types": "./.dist/index.d.ts",
   "main": "./.dist/index.js",
   "files": [
@@ -14,14 +14,12 @@
   },
   "scripts": {
     "build": "rimraf .dist && tsc",
-    "dev": "tsc -w",
-    "publish": "semantic-release"
+    "dev": "tsc -w"
   },
   "devDependencies": {
     "@dmeents/maestro": "1.0.7",
     "@types/rimraf": "3.0.2",
     "rimraf": "3.0.2",
-    "semantic-release": "^19.0.3",
     "semantic-release-monorepo": "^7.0.5",
     "typescript": "4.7.4"
   },
