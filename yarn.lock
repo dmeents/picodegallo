@@ -494,8 +494,6 @@ __metadata:
     chalk: ^5.0.1
     commander: ^9.3.0
     rimraf: 3.0.2
-    semantic-release: ^19.0.3
-    semantic-release-monorepo: ^7.0.5
     typescript: 4.7.4
   bin:
     pico: ./.dist/index.js
@@ -4563,7 +4561,6 @@ __metadata:
     eslint-plugin-prettier: 4.2.1
     eslint-plugin-react: 7.30.1
     eslint-plugin-react-hooks: 4.6.0
-    npm-registry-fetch: ^13.2.0
     prettier: 2.7.1
     rimraf: 3.0.2
     semantic-release: ^19.0.3
