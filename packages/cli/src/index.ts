@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log('testing 25');
+console.log('testing 26');
