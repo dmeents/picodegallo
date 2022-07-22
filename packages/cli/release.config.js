@@ -1,3 +1,3 @@
 const { semantic } = require('@dmeents/maestro');
 
-module.exports = { ...semantic().monorepo.publish };
+module.exports = { ...semantic({ isMonorepo: true, publishToNpm: true }) };

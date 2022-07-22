@@ -1,3 +1,3 @@
 const { prettier } = require('@dmeents/maestro');
 
-module.exports = { ...prettier().base };
+module.exports = { ...prettier() };

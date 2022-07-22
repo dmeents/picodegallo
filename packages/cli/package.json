@@ -18,7 +18,7 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.0.7",
+    "@dmeents/maestro": "1.1.0",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "chalk": "^5.0.1",
-    "commander": "^9.3.0"
+    "commander": "^9.4.0"
   }
 }
