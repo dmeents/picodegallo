@@ -58,15 +58,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@dmeents/maestro@npm:1.1.0"
+"@dmeents/maestro@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@dmeents/maestro@npm:1.1.1"
   dependencies:
     lodash: ^4.17.21
   dependenciesMeta:
     eslint@8.20.0:
       unplugged: true
-  checksum: 78ddb8e951e5658998eee81297064154d7aad1d21340b71e1dbe7382313bb0b82052309c3dbdb0ca2fff935af02f3ed24aa3db83e42e157e74b4d42b0482ab36
+  checksum: 5c1f603a020ba656da5310387f1e6f650d84844b58f7b870b0e178d56c2cb0497838b3b9c263dceb19916d4ccb1a6865a2e07206a7574be73df20122fba66e5f
   languageName: node
   linkType: hard
 
@@ -475,7 +475,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.1.0
+    "@dmeents/maestro": 1.1.1
     "@semantic-release/commit-analyzer": ^9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
@@ -4536,7 +4536,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.1.0
+    "@dmeents/maestro": 1.1.1
+    "@semantic-release/commit-analyzer": ^9.0.2
+    "@semantic-release/git": 10.0.1
+    "@semantic-release/github": 8.0.5
+    "@semantic-release/npm": 9.0.1
+    "@semantic-release/release-notes-generator": ^10.0.3
     "@typescript-eslint/eslint-plugin": 5.30.7
     "@typescript-eslint/parser": 5.30.7
     eslint: 8.20.0
@@ -4551,6 +4556,8 @@ __metadata:
     eslint-plugin-react-hooks: 4.6.0
     prettier: 2.7.1
     rimraf: 3.0.2
+    semantic-release: ^19.0.3
+    semantic-release-monorepo: ^7.0.5
     typescript: 4.7.4
   dependenciesMeta:
     eslint@8.20.0:
