@@ -61,14 +61,14 @@ jobs:
           node-version: 18.5.0
           cache: 'yarn'
 
+      - name: Yarn Install
+        run: yarn install
+
       - name: Get built artifact
         uses: actions/download-artifact@master
         with:
           name: picodegallo-cli-build-${{ github.sha }}
           path: packages/cli/.dist
-
-      - name: Install Semantic Release
-        run: yarn global add semantic-release
 
       - name: Release Package
         run: |
