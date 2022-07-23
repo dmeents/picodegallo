@@ -61,9 +61,6 @@ jobs:
           node-version: 18.5.0
           cache: 'yarn'
 
-      - name: Yarn Install
-        run: yarn install
-
       - name: Get built artifact
         uses: actions/download-artifact@master
         with:
