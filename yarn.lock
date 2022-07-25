@@ -5,6 +5,20 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"#ansi-styles@npm:ansi-styles@latest":
+  version: 6.1.0
+  resolution: "ansi-styles@npm:6.1.0"
+  checksum: 7a7f8528c07a9d20c3a92bccd2b6bc3bb4d26e5cb775c02826921477377bd495d615d61f710d56216344b6238d1d11ef2b0348e146c5b128715578bfb3217229
+  languageName: node
+  linkType: hard
+
+"#supports-color@npm:supports-color@latest":
+  version: 9.2.2
+  resolution: "supports-color@npm:9.2.2"
+  checksum: 976d84877402fc38c1d43b1fde20b0a8dc0283273f21cfebe4ff7507d27543cdfbeec7db108a96b82d694465f06d64e8577562b05d0520b41710088e0a33cc50
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0":
   version: 7.18.6
   resolution: "@babel/code-frame@npm:7.18.6"
@@ -483,19 +497,15 @@ __metadata:
     "@semantic-release/release-notes-generator": ^10.0.3
     chalk: ^5.0.1
     commander: ^9.4.0
-    npmlog: ^6.0.2
-    proc-log: ^2.0.1
     semantic-release: ^19.0.3
     semantic-release-monorepo: ^7.0.5
-    semver: ^7.3.7
     typescript: 4.7.4
-    validate-npm-package-name: ^4.0.0
   bin:
     pico: ./.dist/index.js
   languageName: unknown
   linkType: soft
 
-"@semantic-release/commit-analyzer@npm:^9.0.2, @semantic-release/commit-analyzer@npm:latest":
+"@semantic-release/commit-analyzer@npm:^9.0.2":
   version: 9.0.2
   resolution: "@semantic-release/commit-analyzer@npm:9.0.2"
   dependencies:
@@ -526,7 +536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:10.0.1, @semantic-release/git@npm:latest":
+"@semantic-release/git@npm:10.0.1":
   version: 10.0.1
   resolution: "@semantic-release/git@npm:10.0.1"
   dependencies:
@@ -544,7 +554,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:8.0.5, @semantic-release/github@npm:^8.0.0, @semantic-release/github@npm:latest":
+"@semantic-release/github@npm:8.0.5, @semantic-release/github@npm:^8.0.0":
   version: 8.0.5
   resolution: "@semantic-release/github@npm:8.0.5"
   dependencies:
@@ -570,7 +580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/npm@npm:9.0.1, @semantic-release/npm@npm:^9.0.0, @semantic-release/npm@npm:latest":
+"@semantic-release/npm@npm:9.0.1, @semantic-release/npm@npm:^9.0.0":
   version: 9.0.1
   resolution: "@semantic-release/npm@npm:9.0.1"
   dependencies:
@@ -593,7 +603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.3, @semantic-release/release-notes-generator@npm:latest":
+"@semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.3":
   version: 10.0.3
   resolution: "@semantic-release/release-notes-generator@npm:10.0.3"
   dependencies:
