@@ -9,7 +9,7 @@
   "repository": "https://github.com/dmeents/picodegallo.git",
   "author": "David Meents <david@allido.io>",
   "license": "MIT",
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "build": "yarn workspaces foreach -vpti run build"
   },
@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@dmeents/maestro": "1.1.1",
-    "@typescript-eslint/eslint-plugin": "5.30.7",
-    "@typescript-eslint/parser": "5.30.7",
+    "@typescript-eslint/eslint-plugin": "5.31.0",
+    "@typescript-eslint/parser": "5.31.0",
     "eslint": "8.20.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
