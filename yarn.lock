@@ -512,7 +512,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@semantic-release/commit-analyzer@npm:^9.0.2":
+"@semantic-release/commit-analyzer@npm:*, @semantic-release/commit-analyzer@npm:^9.0.2":
   version: 9.0.2
   resolution: "@semantic-release/commit-analyzer@npm:9.0.2"
   dependencies:
@@ -543,7 +543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:10.0.1":
+"@semantic-release/git@npm:*, @semantic-release/git@npm:10.0.1":
   version: 10.0.1
   resolution: "@semantic-release/git@npm:10.0.1"
   dependencies:
@@ -561,7 +561,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:8.0.5, @semantic-release/github@npm:^8.0.0":
+"@semantic-release/github@npm:*, @semantic-release/github@npm:8.0.5, @semantic-release/github@npm:^8.0.0":
   version: 8.0.5
   resolution: "@semantic-release/github@npm:8.0.5"
   dependencies:
@@ -587,7 +587,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/npm@npm:9.0.1, @semantic-release/npm@npm:^9.0.0":
+"@semantic-release/npm@npm:*, @semantic-release/npm@npm:9.0.1, @semantic-release/npm@npm:^9.0.0":
   version: 9.0.1
   resolution: "@semantic-release/npm@npm:9.0.1"
   dependencies:
@@ -610,7 +610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.3":
+"@semantic-release/release-notes-generator@npm:*, @semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.3":
   version: 10.0.3
   resolution: "@semantic-release/release-notes-generator@npm:10.0.3"
   dependencies:
