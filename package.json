@@ -11,7 +11,8 @@
   "license": "MIT",
   "packageManager": "yarn@3.2.2",
   "scripts": {
-    "build": "yarn workspaces foreach -vpti run build"
+    "build": "yarn workspaces foreach -vpti run build",
+    "release:cli": "yarn workspace @picodegallo/cli run release"
   },
   "dependenciesMeta": {
     "eslint@8.21.0": {
