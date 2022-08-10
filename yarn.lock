@@ -515,10 +515,8 @@ __metadata:
     "@semantic-release/github": 8.0.5
     "@semantic-release/npm": 9.0.1
     "@semantic-release/release-notes-generator": ^10.0.3
-    "@types/semver": ^7
     semantic-release: ^19.0.3
     semantic-release-monorepo: ^7.0.5
-    semver: ^7.3.7
     typescript: 4.7.4
   bin:
     pico: ./.dist/index.js
@@ -689,13 +687,6 @@ __metadata:
   version: 0.12.0
   resolution: "@types/retry@npm:0.12.0"
   checksum: 61a072c7639f6e8126588bf1eb1ce8835f2cb9c2aba795c4491cf6310e013267b0c8488039857c261c387e9728c1b43205099223f160bb6a76b4374f741b5603
-  languageName: node
-  linkType: hard
-
-"@types/semver@npm:^7":
-  version: 7.3.10
-  resolution: "@types/semver@npm:7.3.10"
-  checksum: 7047c2822b1759b2b950f39cfcf261f2b9dca47b4b55bdebba0905a8553631f1531eb0f59264ffe4834d1198c8331c8e0010a4cd742f4e0b60abbf399d134364
   languageName: node
   linkType: hard
 
