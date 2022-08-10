@@ -15,6 +15,7 @@
   "scripts": {
     "build": "rm -rf .dist & tsc",
     "dev": "tsc -w",
+    "prerelease": "yarn install",
     "release": "semantic-release"
   },
   "devDependencies": {
