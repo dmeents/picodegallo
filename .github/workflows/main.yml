@@ -76,4 +76,4 @@ jobs:
 
       - name: Release to npm
         run: |
-          NPM_TOKEN=${{ secrets.NPM_TOKEN }} yarn publish --tolerate-republish --access public
+          NPM_TOKEN=${{ secrets.NPM_TOKEN }} yarn workspace @picodegallo/cli npm publish --tolerate-republish --access public
