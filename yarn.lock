@@ -642,7 +642,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@suin/semantic-release-yarn@npm:^1.1.0":
+"@suin/semantic-release-yarn@npm:*, @suin/semantic-release-yarn@npm:^1.1.0":
   version: 1.1.0
   resolution: "@suin/semantic-release-yarn@npm:1.1.0"
   dependencies:
