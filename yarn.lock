@@ -72,15 +72,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.1.4":
-  version: 1.1.4
-  resolution: "@dmeents/maestro@npm:1.1.4"
+"@dmeents/maestro@npm:1.1.6":
+  version: 1.1.6
+  resolution: "@dmeents/maestro@npm:1.1.6"
   dependencies:
     lodash: ^4.17.21
   dependenciesMeta:
     eslint@8.21.0:
       unplugged: true
-  checksum: ae0c81c6ad1e9a79af8f14dff89f145d9016c0fe8bf82425a6a056b363c5ca39f690b9565ef43d3c3b9d9d4e2107a1eb6e6c7e3f1ce909ccdd8b77289ce6dc16
+  checksum: a258d009e176cff3ebc0cadf81dc31043debd735bb845355cd2d8b2c02a7645265fb8180ef7066e59a382629e78949fe5c4a441246ce4d53fde31f48aa261b8c
   languageName: node
   linkType: hard
 
@@ -509,7 +509,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.1.4
+    "@dmeents/maestro": 1.1.6
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
@@ -4594,7 +4594,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.1.4
+    "@dmeents/maestro": 1.1.6
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
