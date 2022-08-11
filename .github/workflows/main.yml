@@ -70,6 +70,10 @@ jobs:
           name: picodegallo-cli-build-${{ github.sha }}
           path: packages/cli/.dist
 
-      - name: Release Package
+      - name: Semantic Release
         run: |
           NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn workspace @picodegallo/cli run release
+
+      - name: Release to npm
+        run: |
+          NPM_TOKEN=${{ secrets.NPM_TOKEN }} yarn publish --tolerate-republish --access public
