@@ -1,6 +1,6 @@
 {
   "name": "@picodegallo/cli",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "types": "./.dist/index.d.ts",
   "main": "./.dist/index.js",
   "files": [
@@ -15,7 +15,6 @@
   "scripts": {
     "build": "rm -rf .dist & tsc",
     "dev": "tsc -w",
-    "prerelease": "yarn install",
     "release": "semantic-release"
   },
   "devDependencies": {
@@ -23,7 +22,6 @@
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
-    "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
     "semantic-release": "19.0.3",
     "semantic-release-monorepo": "7.0.5",
