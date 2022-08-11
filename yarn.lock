@@ -72,15 +72,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.1.6":
-  version: 1.1.6
-  resolution: "@dmeents/maestro@npm:1.1.6"
+"@dmeents/maestro@npm:1.1.8":
+  version: 1.1.8
+  resolution: "@dmeents/maestro@npm:1.1.8"
   dependencies:
+    "@suin/semantic-release-yarn": ^1.1.0
     lodash: ^4.17.21
   dependenciesMeta:
     eslint@8.21.0:
       unplugged: true
-  checksum: a258d009e176cff3ebc0cadf81dc31043debd735bb845355cd2d8b2c02a7645265fb8180ef7066e59a382629e78949fe5c4a441246ce4d53fde31f48aa261b8c
+  checksum: c3d0611c4a58d965e4db6abb80f2cebaf0ae80fc96bbb540062c8b7f1b617e2b5793ab381844d8b422b911a420bbe9b143650c7a059a2c3b26744cfda6930014
   languageName: node
   linkType: hard
 
@@ -509,7 +510,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.1.6
+    "@dmeents/maestro": 1.1.8
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
@@ -637,6 +638,18 @@ __metadata:
   peerDependencies:
     semantic-release: ">=18.0.0-beta.1"
   checksum: 0237e7e6ebf41b7c6a72eea704b007442cfd05910ded7059235a5684a0e4a233b2ca3c3e39923901131e7f0a4dcb5e95737af469081529acc393223c04715505
+  languageName: node
+  linkType: hard
+
+"@suin/semantic-release-yarn@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@suin/semantic-release-yarn@npm:1.1.0"
+  dependencies:
+    "@semantic-release/error": ^3.0.0
+    execa: ^5.1.1
+    read-pkg: 5.2.0
+    semver: ^7.3.5
+  checksum: f336b57029531370b6c4aeea6a1787f1f3a4b30180ccc810a1faa1edd0379b305269f49d4f985a3ac6eeec4f4b15c682c9133430e782edaa686b6417b6a9976f
   languageName: node
   linkType: hard
 
@@ -2191,7 +2204,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^5.0.0":
+"execa@npm:^5.0.0, execa@npm:^5.1.1":
   version: 5.1.1
   resolution: "execa@npm:5.1.1"
   dependencies:
@@ -4594,7 +4607,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.1.6
+    "@dmeents/maestro": 1.1.8
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
@@ -4866,7 +4879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"read-pkg@npm:^5.0.0, read-pkg@npm:^5.2.0":
+"read-pkg@npm:5.2.0, read-pkg@npm:^5.0.0, read-pkg@npm:^5.2.0":
   version: 5.2.0
   resolution: "read-pkg@npm:5.2.0"
   dependencies:

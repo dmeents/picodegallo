@@ -19,7 +19,7 @@
     }
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.1.6",
+    "@dmeents/maestro": "1.1.8",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
