@@ -642,6 +642,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:79d42ebb30051b85ed44187574e16a9451d9d9ec2a3165b3f24c8956b6ab48122e5d7c49798fca66a2480f25b2946999608be873097dfe889c79c14d63531a0b#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/release-notes-generator", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:10.0.3"],\
+            ["@suin/semantic-release-yarn", "npm:1.1.0"],\
             ["semantic-release", "npm:19.0.3"],\
             ["semantic-release-monorepo", "virtual:a0fb0de66e21393cfe7eb158f620d19479986cd5b22854326d67038ff394acbe2e082747881c0a0babe9f6098f7fb8d00ab0ac9f738423a3c041c20f2f29b5f5#npm:7.0.5"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
