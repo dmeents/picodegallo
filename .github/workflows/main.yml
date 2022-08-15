@@ -73,7 +73,3 @@ jobs:
       - name: Semantic Release
         run: |
           NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn workspace @picodegallo/cli run release
-
-      - name: Release to npm
-        run: |
-          NPM_TOKEN=${{ secrets.NPM_TOKEN }} yarn workspace @picodegallo/cli npm publish --tolerate-republish --access public
