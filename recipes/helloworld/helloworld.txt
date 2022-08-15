@@ -1,0 +1,7 @@
+import React from 'react';
+
+interface I%NAME% {}
+
+export const %NAME%: React.FC<I%NAME%> = () => {
+   return (<div>%PLACEHOLDER%</div>)
+};

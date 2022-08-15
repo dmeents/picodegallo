@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
-import { program } from 'commander';
+import { Command } from 'commander';
 // @ts-ignore
 import pkg from '../package.json';
 
-program
+const pico = new Command();
+
+pico
+  .name('pico')
   .version(pkg.version, '-v, --version', 'output the current version')
-  .command('install', 'test this', {
-    executableFile: `${__dirname}/pico-install`,
+  .command('create', 'test this', {
+    executableFile: `${__dirname}/create`,
   });
 
-program.parse(process.argv);
+pico.parse(process.argv);
