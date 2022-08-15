@@ -11,12 +11,8 @@
   "license": "MIT",
   "packageManager": "yarn@3.2.2",
   "scripts": {
-    "build": "yarn workspaces foreach -vpti run build"
-  },
-  "dependenciesMeta": {
-    "eslint@8.21.0": {
-      "unplugged": true
-    }
+    "build": "yarn workspaces foreach -vpti run build",
+    "dev": "yarn workspaces foreach -vpti run dev"
   },
   "devDependencies": {
     "@dmeents/maestro": "1.1.8",
