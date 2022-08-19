@@ -1,0 +1,44 @@
+{
+  "id": "Commander Command",
+  "description": "creates a new commander command file",
+  "parameters": [
+    {
+      "id": "name",
+      "type": "text",
+      "required": true,
+      "initial": "foobar",
+      "description": "the name of the command to create"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "arguments",
+      "description": "an argument to include in the command",
+      "required": false,
+      "many": false,
+      "parameters": [
+        {
+          "id": "arg",
+          "description": "the name of the argument",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "description": "possible options for a command",
+      "many": true,
+      "required": false,
+      "parameters": [
+        {
+          "id": "option",
+          "required": true
+        },
+        {
+          "id": "description",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

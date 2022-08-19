@@ -5,12 +5,13 @@ import { Command } from 'commander';
 import pkg from '../package.json';
 
 const pico = new Command();
+const commandDir = `${__dirname}/commands`;
 
 pico
   .name('pico')
   .version(pkg.version, '-v, --version', 'output the current version')
-  .command('create', 'test this', {
-    executableFile: `${__dirname}/create`,
+  .command('create', 'create a recipe', {
+    executableFile: `${commandDir}/create/index`,
   });
 
 pico.parse(process.argv);

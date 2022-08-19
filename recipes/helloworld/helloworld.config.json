@@ -1,6 +1,0 @@
-{
-  "name": "poc",
-  "description": "a proof of concept",
-  "outputExtension": "tsx",
-  "parameters": [ { "name": "name", "description": "the name of the poc component" }, "placeholder" ]
-}

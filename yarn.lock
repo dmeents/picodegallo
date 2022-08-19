@@ -72,16 +72,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.1.8":
-  version: 1.1.8
-  resolution: "@dmeents/maestro@npm:1.1.8"
+"@dmeents/maestro@npm:1.1.9":
+  version: 1.1.9
+  resolution: "@dmeents/maestro@npm:1.1.9"
   dependencies:
     "@suin/semantic-release-yarn": ^1.1.0
     lodash: ^4.17.21
   dependenciesMeta:
-    eslint@8.21.0:
+    eslint@8.22.0:
       unplugged: true
-  checksum: c3d0611c4a58d965e4db6abb80f2cebaf0ae80fc96bbb540062c8b7f1b617e2b5793ab381844d8b422b911a420bbe9b143650c7a059a2c3b26744cfda6930014
+  checksum: c02a4a1ea745b4c842bb64e00f9b80aa09b26f08a9b3e328d4e4ba7af90fbeeced868b12b582b78f6bed3b282bf9d7da9f2533d3776e24943e631921dc56219c
   languageName: node
   linkType: hard
 
@@ -510,7 +510,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.1.8
+    "@dmeents/maestro": 1.1.9
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5
@@ -518,6 +518,7 @@ __metadata:
     "@suin/semantic-release-yarn": 1.1.0
     "@types/node": ^18.7.5
     "@types/prompts": ^2
+    app-root-path: ^3.1.0
     boxen: ^7.0.0
     chalk: ^5.0.1
     commander: ^9.4.0
@@ -973,6 +974,13 @@ __metadata:
   version: 0.3.2
   resolution: "ansicolors@npm:0.3.2"
   checksum: e84fae7ebc27ac96d9dbb57f35f078cd6dde1b7046b0f03f73dcefc9fbb1f2e82e3685d083466aded8faf038f9fa9ebb408d215282bcd7aaa301d5ac3c486815
+  languageName: node
+  linkType: hard
+
+"app-root-path@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "app-root-path@npm:3.1.0"
+  checksum: e3db3957aee197143a0f6c75e39fe89b19e7244f28b4f2944f7276a9c526d2a7ab2d115b4b2d70a51a65a9a3ca17506690e5b36f75a068a7e5a13f8c092389ba
   languageName: node
   linkType: hard
 
@@ -4695,7 +4703,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.1.8
+    "@dmeents/maestro": 1.1.9
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.5

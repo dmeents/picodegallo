@@ -1,0 +1,3 @@
+export const $NAME%: React.FC<I%NAME%> = () => {
+    return (<div>%PLACEHOLDER%</div>)
+};
