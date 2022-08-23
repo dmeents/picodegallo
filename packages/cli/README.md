@@ -1,5 +1,5 @@
 # picodegallo/cli
 
-#### Compose your recipes via your terminal!
+#### Compose your recipes via your terminal!!
 
 
