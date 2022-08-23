@@ -10,7 +10,7 @@ export const getPicoConfig = () => {
   return JSON.parse(data) as PicoConfig;
 };
 
-export const getRecipe = (picoConfig: PicoConfig, recipe: string) => {
+export const getRecipePath = (picoConfig: PicoConfig, recipe: string) => {
   const projectRoot = reqlib.toString();
   const userDefinedPath = `${projectRoot}/${picoConfig.recipePath}/${recipe}`;
   const currentPath = `./recipes/${recipe}.config.json`;
