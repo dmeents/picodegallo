@@ -14,20 +14,20 @@
     "build": "yarn workspaces foreach -vpti run build"
   },
   "dependenciesMeta": {
-    "eslint@8.21.0": {
+    "eslint@8.22.0": {
       "unplugged": true
     }
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.1.8",
+    "@dmeents/maestro": "1.1.10",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
     "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
-    "@typescript-eslint/eslint-plugin": "5.33.0",
-    "@typescript-eslint/parser": "5.33.0",
-    "eslint": "8.21.0",
+    "@typescript-eslint/eslint-plugin": "5.34.0",
+    "@typescript-eslint/parser": "5.34.0",
+    "eslint": "8.22.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "17.0.0",
@@ -38,7 +38,7 @@
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "prettier": "2.7.1",
-    "semantic-release": "19.0.3",
+    "semantic-release": "19.0.4",
     "typescript": "4.7.4"
   }
 }
