@@ -5,6 +5,11 @@ import {
   promptUser,
 } from '../../../utils/prompts.utils';
 
+/**
+ * uses the recipeConfig to create any prompts and then awaits user
+ * input. Uses the gathered values to make substitutions in the
+ * picodegallo
+ */
 export const makeReplacements = async (
   ingredient: Ingredient,
   template: string,

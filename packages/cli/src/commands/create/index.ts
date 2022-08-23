@@ -17,8 +17,14 @@ interface Options {
   target: string;
 }
 
-// TODO: accept parameters via command line
-// TODO: include ingredients
+/**
+ * handles the creation of some picodegallo, gets config options, prompts user for input
+ * and combines ingredients
+ *
+ * TODO: accept parameters via command line
+ * TODO: accept ingredients via command line
+ * TODO: allow users to include logic in their recipes
+ */
 command
   .name('create')
   .argument('recipe')

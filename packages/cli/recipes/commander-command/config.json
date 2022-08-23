@@ -15,7 +15,7 @@
       "id": "arguments",
       "description": "an argument to include in the command",
       "required": false,
-      "many": false,
+      "many": true,
       "parameters": [
         {
           "id": "arg",
