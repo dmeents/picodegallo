@@ -16,5 +16,5 @@ export const replaceWithParameter = (
   value: string,
 ) => {
   const regex = new RegExp(`%${id}%`, 'g');
-  return recipe.replace(regex, value);
+  return recipe.replace(regex, value).trim();
 };

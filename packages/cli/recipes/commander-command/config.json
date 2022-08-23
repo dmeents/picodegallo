@@ -35,8 +35,7 @@
           "required": true
         },
         {
-          "id": "description",
-          "required": true
+          "id": "description"
         }
       ]
     }

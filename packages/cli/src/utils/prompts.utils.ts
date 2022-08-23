@@ -8,8 +8,8 @@ export const makeQuestionsFromParameters = (
   if (!parameters) return [];
 
   return parameters.map(param => {
-    const message = `Enter value for ${target} [${param.id}] ${
-      param.required ? '(required)' : null
+    const message = `Enter value for "${target}" [${param.id}] ${
+      param.required ? '(required)' : ''
     }:`;
 
     return {
