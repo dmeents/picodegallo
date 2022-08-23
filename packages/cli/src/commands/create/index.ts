@@ -8,7 +8,8 @@ import {
 } from '../../utils/config.utils';
 import { loadTxt, saveTxt } from '../../utils/files.utils';
 import { promptRequiredOptions } from '../../utils/prompts.utils';
-import { addIngredient } from './add-ingredients';
+import { handleIngredient } from './utils/handle-ingredient';
+import { makeReplacements } from './utils/make-replacements';
 
 const command = new Command();
 
@@ -29,13 +30,12 @@ command
     const recipePath = getRecipePath(getPicoConfig(), args);
     const recipeConfig = getRecipeConfig(recipePath);
     const base = loadTxt(`${recipePath}/base.txt`);
-    let picodegallo = await addIngredient(recipeConfig, base);
+    let picodegallo = await makeReplacements(recipeConfig, base);
 
     for (const ingredient of recipeConfig.ingredients || []) {
-      picodegallo = await addIngredient(ingredient, picodegallo);
+      picodegallo = await handleIngredient(ingredient, picodegallo, recipePath);
     }
 
-    // write all to new file
     const options = {
       ...opts,
       ...(await promptRequiredOptions(opts, ['target'])),

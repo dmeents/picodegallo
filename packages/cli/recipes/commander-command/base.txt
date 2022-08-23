@@ -8,6 +8,6 @@ command
   %options%
   .action((args, opts) => {
     console.log("hello world");
-  };
+  });
 
 command.parse(process.argv);

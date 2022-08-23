@@ -1,11 +1,11 @@
-import { Ingredient } from '../../interfaces/recipe-config.interface';
-import { replaceWithParameter } from '../../utils/files.utils';
+import { Ingredient } from '../../../interfaces/recipe-config.interface';
+import { replaceWithParameter } from '../../../utils/files.utils';
 import {
   makeQuestionsFromParameters,
   promptUser,
-} from '../../utils/prompts.utils';
+} from '../../../utils/prompts.utils';
 
-export const addIngredient = async (
+export const makeReplacements = async (
   ingredient: Ingredient,
   picodegallo: string,
 ) => {
