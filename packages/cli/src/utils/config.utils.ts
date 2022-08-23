@@ -1,6 +1,8 @@
 import reqlib from 'app-root-path';
 import * as fs from 'fs';
 import { PicoConfig } from '../interfaces/pico-config.interface';
+import { RecipeConfig } from '../interfaces/recipe-config.interface';
+import { loadJSON } from './files.utils';
 
 export const getPicoConfig = () => {
   const picoConfigPath = `${reqlib.toString()}/pico.config.json`;
@@ -21,3 +23,6 @@ export const getRecipe = (picoConfig: PicoConfig, recipe: string) => {
 
   throw Error('no recipe found');
 };
+
+export const getRecipeConfig = recipePath =>
+  loadJSON(`${recipePath}/config.json`) as RecipeConfig;

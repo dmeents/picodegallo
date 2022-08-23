@@ -1,21 +1,14 @@
-import fs from 'fs';
-import { RecipeConfig } from '../interfaces/recipe-config.interface';
+import fs, { writeFileSync } from 'fs';
 
 export const loadJSON = (path: string) => {
   const data = fs.readFileSync(path, 'utf-8');
   return JSON.parse(data);
 };
 
-export const loadTxt = (path: string) =>
-  fs.readFileSync(`${path}.txt`, 'utf-8');
+export const loadTxt = (path: string) => fs.readFileSync(path, 'utf-8');
 
-export const getFiles = (recipePath: string, recipeName: string) => {
-  const path = `${recipePath}/${recipeName}`;
-  const recipeConfig: RecipeConfig = loadJSON(`${path}.config.json`);
-  const recipe = loadTxt(`${path}.txt`);
-
-  return { recipeConfig, recipe };
-};
+export const saveTxt = (target: string, data: string) =>
+  writeFileSync(target, data, 'utf-8');
 
 export const replaceWithParameter = (
   recipe: string,

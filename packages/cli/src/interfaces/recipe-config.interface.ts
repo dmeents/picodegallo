@@ -1,6 +1,6 @@
 import { Falsy, PromptType, ValueOrFunc } from 'prompts';
 
-export interface Parameters {
+export interface Parameter {
   id: string;
   type?: ValueOrFunc<PromptType> | Falsy;
   required?: boolean;
@@ -8,17 +8,17 @@ export interface Parameters {
   description?: string;
 }
 
-export interface Ingredients {
+export interface Ingredient {
   id: string;
   description?: string;
   required?: boolean;
   many?: boolean;
-  parameters?: Array<Parameters>;
+  parameters?: Array<Parameter>;
 }
 
 export interface RecipeConfig {
   id: string;
   description?: string;
-  parameters?: Array<Parameters>;
-  ingredients?: Array<Ingredients>;
+  parameters?: Array<Parameter>;
+  ingredients?: Array<Ingredient>;
 }

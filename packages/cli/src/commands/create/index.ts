@@ -1,44 +1,47 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
 import { Command } from 'commander';
-import { writeFileSync } from 'fs';
-import { getPicoConfig, getRecipe } from '../../utils/config.utils';
-import { getFiles, replaceWithParameter } from '../../utils/files.utils';
 import {
-  makeQuestionsFromParameters,
-  promptRequiredOptions,
-  promptUser,
-} from '../../utils/prompts.utils';
+  getPicoConfig,
+  getRecipe,
+  getRecipeConfig,
+} from '../../utils/config.utils';
+import { loadTxt, saveTxt } from '../../utils/files.utils';
+import { promptRequiredOptions } from '../../utils/prompts.utils';
+import { addIngredient } from './add-ingredients';
 
 const command = new Command();
+
+interface Options {
+  target: string;
+}
 
 // TODO: accept parameters via command line
 // TODO: include ingredients
 command
   .name('create')
   .argument('recipe')
-  .option('-t, --target <path>', 'where to output the template')
-  .action(async (args, opts) => {
+  .option(
+    '-t, --target <path>',
+    'where to output the template, and the file name',
+  )
+  .action(async (args, opts: Options) => {
     const recipePath = getRecipe(getPicoConfig(), args);
-    const { recipeConfig, recipe } = getFiles(recipePath, args);
-    const questions = makeQuestionsFromParameters(recipeConfig.parameters);
-    let picodegallo = recipe;
+    const recipeConfig = getRecipeConfig(recipePath);
+    const base = loadTxt(`${recipePath}/base.txt`);
+    let picodegallo = await addIngredient(recipeConfig, base);
 
-    // get base level parameters
-    const responses = {
+    for (const ingredient of recipeConfig.ingredients || []) {
+      picodegallo = await addIngredient(ingredient, picodegallo);
+    }
+
+    // write all to new file
+    const options = {
+      ...opts,
       ...(await promptRequiredOptions(opts, ['target'])),
-      ...(await promptUser(questions)),
     };
 
-    // make replacements on base
-    Object.keys(responses).forEach(key => {
-      picodegallo = replaceWithParameter(picodegallo, key, responses[key]);
-    });
-
-    // handle ingredients
-
-    // write new file
-    writeFileSync(`${opts.target || responses.target}`, picodegallo, 'utf-8');
+    saveTxt(options.target, picodegallo);
   });
 
 command.parse(process.argv);

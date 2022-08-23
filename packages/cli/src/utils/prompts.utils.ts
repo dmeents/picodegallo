@@ -1,13 +1,14 @@
 import prompts, { PromptObject } from 'prompts';
-import { Parameters } from '../interfaces/recipe-config.interface';
+import { Parameter } from '../interfaces/recipe-config.interface';
 
 export const makeQuestionsFromParameters = (
-  parameters?: Array<Parameters>,
+  target: string,
+  parameters?: Array<Parameter>,
 ): Array<PromptObject> => {
   if (!parameters) return [];
 
   return parameters.map(param => {
-    const message = `Enter parameter [${param.id}] ${
+    const message = `Enter value for ${target} [${param.id}] ${
       param.required ? '(required)' : null
     }:`;
 
