@@ -1,5 +1,6 @@
 import { Ingredient } from '../../../interfaces/recipe-config.interface';
 import { replaceWithParameter } from '../../../utils/files.utils';
+import { SimpleObject } from '../../../utils/parameter.utils';
 import {
   makeQuestionsFromParameters,
   promptUser,
@@ -13,15 +14,17 @@ import {
 export const makeReplacements = async (
   ingredient: Ingredient,
   template: string,
+  paramValues: SimpleObject = {},
 ) => {
   const { id, parameters } = ingredient;
   let tempPico = template;
 
-  const questions = makeQuestionsFromParameters(id, parameters);
+  const questions = makeQuestionsFromParameters(id, paramValues, parameters);
   const responses = await promptUser(questions);
 
-  Object.keys(responses).forEach(key => {
-    tempPico = replaceWithParameter(tempPico, key, responses[key]);
+  parameters?.forEach(key => {
+    const value = responses[key.id] || paramValues[key.id] || null;
+    tempPico = replaceWithParameter(tempPico, key.id, value);
   });
 
   return tempPico;

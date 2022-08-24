@@ -1,7 +1,7 @@
 import { Ingredient } from '../../../interfaces/recipe-config.interface';
 import { loadTxt, replaceWithParameter } from '../../../utils/files.utils';
 import { promptUser } from '../../../utils/prompts.utils';
-import { makeReplacements } from './make-replacements';
+import { makeReplacements } from './replacement.utils';
 
 /**
  * takes the ingredient config and allows the user to create multiple of them

@@ -7,21 +7,22 @@ import {
   getRecipePath,
 } from '../../utils/config.utils';
 import { loadTxt, saveTxt } from '../../utils/files.utils';
+import { convertOptionStringToObject } from '../../utils/parameter.utils';
 import { promptRequiredOptions } from '../../utils/prompts.utils';
-import { handleIngredient } from './utils/handle-ingredient';
-import { makeReplacements } from './utils/make-replacements';
+import { handleIngredient } from './utils/ingredient.utils';
+import { makeReplacements } from './utils/replacement.utils';
 
 const command = new Command();
 
-interface Options {
+export interface Options {
   target: string;
+  parameters: string;
 }
 
 /**
  * handles the creation of some picodegallo, gets config options, prompts user for input
  * and combines ingredients
  *
- * TODO: accept parameters via command line
  * TODO: accept ingredients via command line
  * TODO: allow users to include logic in their recipes
  */
@@ -30,13 +31,18 @@ command
   .argument('recipe')
   .option(
     '-t, --target <path>',
-    'where to output the template, and the file name',
+    'where to output the template, and to what file name (eg, ./src/components/my-component.tsx)',
+  )
+  .option(
+    '-p, --parameters <param=value>',
+    'a comma delimited string of key=value pairs that will be used instead of prompting for input (eg, name=helloWorld)',
   )
   .action(async (args, opts: Options) => {
     const recipePath = getRecipePath(getPicoConfig(), args);
     const recipeConfig = getRecipeConfig(recipePath);
     const base = loadTxt(`${recipePath}/base.txt`);
-    let picodegallo = await makeReplacements(recipeConfig, base);
+    const paramValues = convertOptionStringToObject(opts.parameters || '');
+    let picodegallo = await makeReplacements(recipeConfig, base, paramValues);
 
     for (const ingredient of recipeConfig.ingredients || []) {
       picodegallo = await handleIngredient(ingredient, picodegallo, recipePath);
