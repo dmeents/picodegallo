@@ -1,10 +1,10 @@
 import { Ingredient } from '../../../interfaces/recipe-config.interface';
 import { replaceWithParameter } from '../../../utils/files.utils';
-import { SimpleObject } from '../../../utils/parameter.utils';
 import {
   makeQuestionsFromParameters,
   promptUser,
 } from '../../../utils/prompts.utils';
+import { FlatObject } from './parse.utils';
 
 /**
  * uses the recipeConfig to create any prompts and then awaits user
@@ -14,7 +14,7 @@ import {
 export const makeReplacements = async (
   ingredient: Ingredient,
   template: string,
-  paramValues: SimpleObject = {},
+  paramValues: FlatObject = {},
 ) => {
   const { id, parameters } = ingredient;
   let tempPico = template;

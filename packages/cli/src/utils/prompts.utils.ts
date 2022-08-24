@@ -1,13 +1,13 @@
 import prompts, { PromptObject } from 'prompts';
+import { FlatObject } from '../commands/create/utils/parse.utils';
 import { Parameter } from '../interfaces/recipe-config.interface';
-import { SimpleObject } from './parameter.utils';
 
 /**
  * uses the parameters object to compose questions to prompt the user for input
  */
 export const makeQuestionsFromParameters = (
   target: string,
-  paramValues: SimpleObject,
+  paramValues: FlatObject,
   parameters?: Array<Parameter>,
 ): Array<PromptObject> => {
   if (!parameters) return [];
