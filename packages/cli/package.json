@@ -14,8 +14,7 @@
   },
   "scripts": {
     "build": "rm -rf ./.dist & tsc",
-    "dev": "tsc -w",
-    "release": "semantic-release"
+    "dev": "tsc -w"
   },
   "devDependencies": {
     "@dmeents/maestro": "1.1.11",

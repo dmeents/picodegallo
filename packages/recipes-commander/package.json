@@ -8,8 +8,7 @@
   "author": "David Meents <david@allido.io>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./.dist & cp -r ./src ./.dist",
-    "release": "semantic-release"
+    "build": "rm -rf ./.dist & cp -r ./src ./.dist"
   },
   "devDependencies": {
     "@dmeents/maestro": "1.1.10",
