@@ -18,7 +18,7 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.1.10",
+    "@dmeents/maestro": "1.1.11",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
@@ -26,9 +26,9 @@
     "@suin/semantic-release-yarn": "1.1.0",
     "@types/node": "18.7.11",
     "@types/prompts": "2.4.0",
-    "semantic-release": "19.0.4",
+    "semantic-release": "19.0.5",
     "semantic-release-monorepo": "7.0.5",
-    "typescript": "4.7.4"
+    "typescript": "4.8.2"
   },
   "dependencies": {
     "app-root-path": "^3.1.0",
