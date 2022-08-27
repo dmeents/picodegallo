@@ -70,8 +70,7 @@ jobs:
       - name: Get built artifact
         uses: actions/download-artifact@master
         with:
-          name: picodegallo-${{ matrix.package }}-build-${{ github.sha }}
-          path: packages/${{ matrix.package }}/.dist
+          name: picodegallo-*-build-${{ github.sha }}
 
       - name: Semantic Release
         run: |
