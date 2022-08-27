@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           if-no-files-found: ignore
-          name: packages/${{ matrix.package }}/.dist
+          name: picodegallo-${{ matrix.package }}-build-${{ github.sha }}
           path: packages/${{ matrix.package }}/.dist
 
   publish:
@@ -69,6 +69,8 @@ jobs:
 
       - name: Get built artifact
         uses: actions/download-artifact@master
+        with:
+          path: packages/*/.dist
 
       - name: Semantic Release
         run: |
