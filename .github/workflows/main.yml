@@ -37,8 +37,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           if-no-files-found: ignore
-          name: picodegallo-${{ matrix.package }}-build-${{ github.sha }}
-          path: packages/${{ matrix.package }}/.dist
+          name: packages/${{ matrix.package }}/.dist
 
   publish:
     runs-on: ubuntu-latest
