@@ -11,8 +11,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn workspaces foreach -vpti run build",
-    "dev": "yarn workspaces foreach -vpti run dev",
-    "release": "semantic-release"
+    "dev": "yarn workspaces foreach -vpti run dev"
   },
   "devDependencies": {
     "@dmeents/maestro": "1.1.11",
