@@ -45,6 +45,7 @@ jobs:
     needs: [ build ]
     if: github.ref == 'refs/heads/main'
     strategy:
+      max-parallel: 1
       matrix:
         package: [ 'cli', 'recipes-commander' ]
     steps:
@@ -78,5 +79,4 @@ jobs:
 
       - name: Semantic Release
         run: |
-          git pull --rebase origin master
           NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn workspace @picodegallo/${{ matrix.package }} run release
