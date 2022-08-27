@@ -538,6 +538,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@picodegallo/recipes-commander@workspace:packages/recipes-commander":
+  version: 0.0.0-use.local
+  resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
+  dependencies:
+    "@dmeents/maestro": 1.1.10
+    "@semantic-release/commit-analyzer": 9.0.2
+    "@semantic-release/git": 10.0.1
+    "@semantic-release/github": 8.0.5
+    "@semantic-release/release-notes-generator": 10.0.3
+    "@suin/semantic-release-yarn": 1.1.0
+    semantic-release: 19.0.4
+    semantic-release-monorepo: 7.0.5
+  bin:
+    pico: ./.dist/index.js
+  languageName: unknown
+  linkType: soft
+
 "@semantic-release/commit-analyzer@npm:*, @semantic-release/commit-analyzer@npm:9.0.2, @semantic-release/commit-analyzer@npm:^9.0.2":
   version: 9.0.2
   resolution: "@semantic-release/commit-analyzer@npm:9.0.2"

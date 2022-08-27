@@ -2,8 +2,11 @@ name: main
 on: push
 
 jobs:
-  build-cli:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: ['cli', 'recipes-commander']
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -13,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.5.0
+          node-version: 18.7.0
 
       - name: Enable Corepack
         run: corepack enable
@@ -21,26 +24,29 @@ jobs:
       - name: Setup Yarn Caching
         uses: actions/setup-node@v3
         with:
-          node-version: 18.5.0
+          node-version: 18.7.0
           cache: 'yarn'
 
       - name: Yarn Install
         run: yarn install
 
       - name: Build all packages
-        run: yarn build
+        run: yarn workspace @picodegallo/${{ matrix.package }}
 
       - name: Save cli artifact
         uses: actions/upload-artifact@master
         with:
           if-no-files-found: ignore
-          name: picodegallo-cli-build-${{ github.sha }}
-          path: packages/cli/.dist
+          name: picodegallo-${{ matrix.package }}-build-${{ github.sha }}
+          path: packages/${{ matrix.package }}/.dist
 
-  publish-cli:
+  publish:
     runs-on: ubuntu-latest
-    needs: [ build-cli ]
+    needs: [ build ]
     if: github.ref == 'refs/heads/main'
+    strategy:
+      matrix:
+        package: [ 'cli', 'recipes-commander' ]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -50,7 +56,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.5.0
+          node-version: 18.7.0
 
       - name: Enable Corepack
         run: corepack enable
@@ -58,7 +64,7 @@ jobs:
       - name: Setup Yarn Caching
         uses: actions/setup-node@v3
         with:
-          node-version: 18.5.0
+          node-version: 18.7.0
           cache: 'yarn'
 
       - name: Yarn Install
@@ -67,9 +73,9 @@ jobs:
       - name: Get built artifact
         uses: actions/download-artifact@master
         with:
-          name: picodegallo-cli-build-${{ github.sha }}
-          path: packages/cli/.dist
+          name: picodegallo-${{ matrix.package }}-build-${{ github.sha }}
+          path: packages/${{ matrix.package }}/.dist
 
       - name: Semantic Release
         run: |
-          NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn workspace @picodegallo/cli run release
+          NPM_TOKEN=${{ secrets.NPM_TOKEN }} GH_TOKEN=${{ secrets.GH_TOKEN }} yarn workspace @picodegallo/${{ matrix.package }} run release
