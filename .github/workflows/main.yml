@@ -33,7 +33,7 @@ jobs:
       - name: Release @picodegallo/cli
         uses: ./maestro/src/github-actions/release-standard
         with:
-          packageName: '@picodegallo/cli'
+          packageName: 'cli'
           namespace: '@picodegallo'
           npmToken: ${{ secrets.NPM_TOKEN }}
           githubToken: ${{ secrets.GH_TOKEN }}
