@@ -5,9 +5,15 @@ jobs:
   build-cli:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Picodegallo
+        uses: actions/checkout@v3
+      - name: Checkout Maestro Actions
+        uses: actions/checkout@v3
+        with:
+          repository: dmeents/maestro
+          path: ./maestro
       - name: Build @picodegallo/cli
-        uses: dmeents/maestro/src/github-actions/build-standard
+        uses: maestro/src/github-actions/build-standard
         with:
           packageName: '@picodegallo/cli'
           isMonorepo: 'true'
@@ -17,9 +23,15 @@ jobs:
     needs: [ build-cli ]
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Picodegallo
+        uses: actions/checkout@v3
+      - name: Checkout Maestro Actions
+        uses: actions/checkout@v3
+        with:
+          repository: dmeents/maestro
+          path: ./maestro
       - name: Release @picodegallo/cli
-        uses: dmeents/maestro/src/github-actions/release-standard
+        uses: maestro/src/github-actions/release-standard
         with:
           packageName: '@picodegallo/cli'
           isMonorepo: 'true'
