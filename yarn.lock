@@ -72,16 +72,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@dmeents/maestro@npm:1.2.0"
+"@dmeents/maestro@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@dmeents/maestro@npm:1.4.0"
   dependencies:
     "@suin/semantic-release-yarn": ^1.1.0
     lodash: ^4.17.21
   dependenciesMeta:
     eslint@8.23.0:
       unplugged: true
-  checksum: ce54b1af9308404ade72fcc73950339e8da4348eec29b851726cc37ea8c5ee6a98cdb2b41cb4e0a861c3aea5b8e8d33802d93a1efc63857092a1fe1f6560f3b3
+  checksum: 7063b766b98e25984a497047dec97b37be5dbfb199ebdb41ed6189f6454bf295ab019ea0bf9ded97206e6a9718d991bb7b6071b44b6d43e2addf33bb7818f066
   languageName: node
   linkType: hard
 
@@ -517,14 +517,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.2.0
+    "@dmeents/maestro": 1.4.0
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
     "@suin/semantic-release-yarn": 1.1.0
     "@types/node": 18.7.14
-    "@types/prompts": 2.4.0
+    "@types/prompts": 2.0.14
     app-root-path: ^3.1.0
     boxen: ^7.0.0
     chalk: ^5.0.1
@@ -542,7 +542,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
   dependencies:
-    "@dmeents/maestro": 1.2.0
+    "@dmeents/maestro": 1.4.0
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -737,7 +737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.7.14":
+"@types/node@npm:*, @types/node@npm:18.7.14":
   version: 18.7.14
   resolution: "@types/node@npm:18.7.14"
   checksum: 99cf28ff854100158de875cca23c7acc3cc01dfee526a52b90b7f36767c821bcbaf2be0a98a70f06f3b78f3c60639168ff949d725b61e2e124f9f71f1fb8043d
@@ -758,10 +758,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prompts@npm:2.4.0":
-  version: 2.4.0
-  resolution: "@types/prompts@npm:2.4.0"
-  checksum: ec75655f07fbc3cb2df60a3e3bdd13bfda0554a16f5541285c4b1cc0610756838a2863dccfc911cbb1385492054c07210512164e3dbef272ec638d631783b278
+"@types/prompts@npm:2.0.14":
+  version: 2.0.14
+  resolution: "@types/prompts@npm:2.0.14"
+  dependencies:
+    "@types/node": "*"
+  checksum: e20a92a3fc38646d850ac3c7c03cab582a3b4f12224605a209ef7025d2fbe574656276ab9e43ea01b504f7e91d21a6da0119d1e1eeacf939895ec2ad8d9c6b5d
   languageName: node
   linkType: hard
 
@@ -4754,7 +4756,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.2.0
+    "@dmeents/maestro": 1.4.0
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
