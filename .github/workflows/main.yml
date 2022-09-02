@@ -15,8 +15,8 @@ jobs:
       - name: Build @picodegallo/cli
         uses: ./maestro/src/github-actions/build-standard
         with:
-          packageName: '@picodegallo/cli'
-          isMonorepo: 'true'
+          packageName: 'cli'
+          namespace: '@picodegallo'
 
   publish:
     runs-on: ubuntu-latest
@@ -34,6 +34,6 @@ jobs:
         uses: ./maestro/src/github-actions/release-standard
         with:
           packageName: '@picodegallo/cli'
-          isMonorepo: 'true'
+          namespace: '@picodegallo'
           npmToken: ${{ secrets.NPM_TOKEN }}
           githubToken: ${{ secrets.GH_TOKEN }}
