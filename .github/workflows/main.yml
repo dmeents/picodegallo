@@ -13,7 +13,7 @@ jobs:
           repository: dmeents/maestro
           path: ./maestro
       - name: Build @picodegallo/cli
-        uses: maestro/src/github-actions/build-standard
+        uses: ./maestro/src/github-actions/build-standard
         with:
           packageName: '@picodegallo/cli'
           isMonorepo: 'true'
@@ -31,7 +31,7 @@ jobs:
           repository: dmeents/maestro
           path: ./maestro
       - name: Release @picodegallo/cli
-        uses: maestro/src/github-actions/release-standard
+        uses: ./maestro/src/github-actions/release-standard
         with:
           packageName: '@picodegallo/cli'
           isMonorepo: 'true'
