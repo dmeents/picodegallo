@@ -72,16 +72,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.4.2":
-  version: 1.4.2
-  resolution: "@dmeents/maestro@npm:1.4.2"
+"@dmeents/maestro@npm:1.4.8":
+  version: 1.4.8
+  resolution: "@dmeents/maestro@npm:1.4.8"
   dependencies:
     "@suin/semantic-release-yarn": ^1.1.0
     lodash: ^4.17.21
   dependenciesMeta:
     eslint@8.23.0:
       unplugged: true
-  checksum: 8f74aa4b776947c50a76bc517bf9863c125e6ef88ae3c3f7edcd7bfcefb87bbb879f646dc825f6ce69f8670a846d2d5d5a834d0d9b43685a92ce87d507af529c
+  checksum: b7100221b9f627c4ae7bf13c2e7283192eb7eeb3eee099fb25241d1bde519d6e2d8db56b654c928127d0f45a19a219f6abdee56e43602ed8c05048d2361a2994
   languageName: node
   linkType: hard
 
@@ -517,7 +517,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.4.2
+    "@dmeents/maestro": 1.4.8
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -532,7 +532,7 @@ __metadata:
     prompts: ^2.4.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.5
-    typescript: 4.8.2
+    typescript: 4.8.3
   bin:
     pico: ./.dist/index.js
   languageName: unknown
@@ -542,7 +542,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
   dependencies:
-    "@dmeents/maestro": 1.4.2
+    "@dmeents/maestro": 1.4.8
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -4756,7 +4756,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.4.2
+    "@dmeents/maestro": 1.4.8
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -4776,7 +4776,7 @@ __metadata:
     eslint-plugin-react-hooks: 4.6.0
     prettier: 2.7.1
     semantic-release: 19.0.5
-    typescript: 4.8.2
+    typescript: 4.8.3
   languageName: unknown
   linkType: soft
 
@@ -5976,23 +5976,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.8.2":
-  version: 4.8.2
-  resolution: "typescript@npm:4.8.2"
+"typescript@npm:4.8.3":
+  version: 4.8.3
+  resolution: "typescript@npm:4.8.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 7f5b81d0d558c9067f952c7af52ab7f19c2e70a916817929e4a5b256c93990bf3178eccb1ac8a850bc75df35f6781b6f4cb3370ce20d8b1ded92ed462348f628
+  checksum: 8286a5edcaf3d68e65c451aa1e7150ad1cf53ee0813c07ec35b7abdfdb10f355ecaa13c6a226a694ae7a67785fd7eeebf89f845da0b4f7e4a35561ddc459aba0
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.8.2#~builtin<compat/typescript>":
-  version: 4.8.2
-  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"
+"typescript@patch:typescript@4.8.3#~builtin<compat/typescript>":
+  version: 4.8.3
+  resolution: "typescript@patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5cb0f02f414f5405f4b0e7ee1fd7fa9177b6a8783c9017b6cad85f56ce4c4f93e0e6f2ce37e863cb597d44227cd009474c9fbd85bf7a50004e5557426cb58079
+  checksum: 2222d2382fb3146089b1d27ce2b55e9d1f99cc64118f1aba75809b693b856c5d3c324f052f60c75b577947fc538bc1c27bad0eb76cbdba9a63a253489504ba7e
   languageName: node
   linkType: hard
 
