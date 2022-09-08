@@ -1,4 +1,4 @@
-# picodegallo/cli
+# @picodegallo/cli
 
 ![npm](https://img.shields.io/npm/v/@picodegallo/cli?style=flat-square)
 ![npm](https://img.shields.io/npm/dw/@picodegallo/cli?style=flat-square)

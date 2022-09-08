@@ -1,4 +1,4 @@
-# picodegallo/recipes-commander
+# @picodegallo/recipes-commander
 
 ![npm](https://img.shields.io/npm/v/@picodegallo/recipes-commander?style=flat-square)
 ![npm](https://img.shields.io/npm/dw/@picodegallo/recipes-commander?style=flat-square)
