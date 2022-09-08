@@ -32,7 +32,7 @@ jobs:
           repository: dmeents/maestro
           path: ./maestro
 
-      - name: Build @picodegallo/cli
+      - name: Build @picodegallo/recipes-commander
         uses: ./maestro/src/github-actions/build-standard
         with:
           packageName: 'recipes-commander'
@@ -74,7 +74,7 @@ jobs:
           repository: dmeents/maestro
           path: ./maestro
 
-      - name: Release @picodegallo/cli
+      - name: Release @picodegallo/recipes-commander
         uses: ./maestro/src/github-actions/release-standard
         with:
           packageName: 'recipes-commander'
