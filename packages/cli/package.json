@@ -15,6 +15,7 @@
   "scripts": {
     "build": "rm -rf ./.dist & tsc",
     "dev": "tsc -w",
+    "setup": "npm install -g .",
     "release": "semantic-release"
   },
   "devDependencies": {
