@@ -548,6 +548,7 @@ __metadata:
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
     "@suin/semantic-release-yarn": 1.1.0
+    app-root-path: ^3.1.0
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.5
     typescript: ^4.8.3

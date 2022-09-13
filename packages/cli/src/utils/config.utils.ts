@@ -35,6 +35,9 @@ export const getRecipePath = (picoConfig: PicoConfig, recipe: string) => {
 
     picoConfig.recipes.every(i => {
       const testPath = `${path.dirname(require.resolve(i))}/${recipe}`;
+      const { getPath } = require(i);
+
+      console.log(getPath());
 
       if (fs.existsSync(testPath)) {
         foundPath = testPath;

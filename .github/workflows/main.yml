@@ -2,82 +2,51 @@ name: main
 on: push
 
 jobs:
-  build-cli:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - cli
+          - recipes-commander
     steps:
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
-
       - name: Checkout Maestro Actions
         uses: actions/checkout@v3
         with:
           repository: dmeents/maestro
           path: ./maestro
-
       - name: Build @picodegallo/cli
         uses: ./maestro/src/github-actions/build-standard
         with:
-          packageName: 'cli'
           namespace: '@picodegallo'
+          packageName: ${{ matrix.package }}
 
-  build-recipes-commander:
+  publish:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Picodegallo
-        uses: actions/checkout@v3
-
-      - name: Checkout Maestro Actions
-        uses: actions/checkout@v3
-        with:
-          repository: dmeents/maestro
-          path: ./maestro
-
-      - name: Build @picodegallo/recipes-commander
-        uses: ./maestro/src/github-actions/build-standard
-        with:
-          packageName: 'recipes-commander'
-          namespace: '@picodegallo'
-
-  publish-cli:
-    runs-on: ubuntu-latest
-    needs: [ build-cli ]
+    needs: [ build ]
     if: github.ref == 'refs/heads/main'
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        package:
+          - cli
+          - recipes-commander
     steps:
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
-
       - name: Checkout Maestro Actions
         uses: actions/checkout@v3
         with:
           repository: dmeents/maestro
           path: ./maestro
-
       - name: Release @picodegallo/cli
         uses: ./maestro/src/github-actions/release-standard
         with:
-          packageName: 'cli'
           namespace: '@picodegallo'
-          npmToken: ${{ secrets.NPM_TOKEN }}
-          githubToken: ${{ secrets.GH_TOKEN }}
-
-  publish-recipes-commander:
-    runs-on: ubuntu-latest
-    needs: [ build-recipes-commander ]
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: Checkout Picodegallo
-        uses: actions/checkout@v3
-
-      - name: Checkout Maestro Actions
-        uses: actions/checkout@v3
-        with:
-          repository: dmeents/maestro
-          path: ./maestro
-
-      - name: Release @picodegallo/recipes-commander
-        uses: ./maestro/src/github-actions/release-standard
-        with:
-          packageName: 'recipes-commander'
-          namespace: '@picodegallo'
+          packageName: ${{ matrix.package }}
           npmToken: ${{ secrets.NPM_TOKEN }}
           githubToken: ${{ secrets.GH_TOKEN }}
