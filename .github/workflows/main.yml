@@ -41,7 +41,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Get latest code
-        run: git pull main
+        run: git pull origin main
       - name: Checkout Maestro Actions
         uses: actions/checkout@v3
         with:
