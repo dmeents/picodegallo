@@ -1,6 +1,5 @@
 import reqlib from 'app-root-path';
 import * as fs from 'fs';
-import path from 'path';
 import { PicoConfig } from '../interfaces/pico-config.interface';
 import { RecipeConfig } from '../interfaces/recipe-config.interface';
 import { loadJSON } from './files.utils';
@@ -31,23 +30,14 @@ export const getRecipePath = (picoConfig: PicoConfig, recipe: string) => {
 
   // does the recipe exist in any of the provided recipes in the picoConfig
   if (picoConfig.recipes && Array.isArray(picoConfig.recipes)) {
-    let foundPath;
-
-    picoConfig.recipes.every(i => {
-      const testPath = `${path.dirname(require.resolve(i))}/${recipe}`;
-      const { getPath } = require(i);
-
-      console.log(getPath());
-
-      if (fs.existsSync(testPath)) {
-        foundPath = testPath;
-        return false;
-      }
-
-      return true;
+    const foundPath = picoConfig.recipes.find(i => {
+      const { getModuleRecipePath } = require(i);
+      const pathToTest = `${getModuleRecipePath()}/${recipe}`;
+      if (fs.existsSync(pathToTest)) return pathToTest;
+      return false;
     });
 
-    return foundPath;
+    if (foundPath) return foundPath;
   }
 
   throw Error('no recipe found');

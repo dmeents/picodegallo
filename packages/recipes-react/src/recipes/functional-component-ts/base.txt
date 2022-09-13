@@ -1,0 +1,7 @@
+import { Command } from 'commander';
+
+interface I%name% {}
+
+export const %name%: React.FC<I%name%> = () => {
+    return (<div>hello world</div>);
+}

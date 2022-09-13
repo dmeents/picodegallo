@@ -1,0 +1,13 @@
+{
+  "id": "React Functional Component Typescript",
+  "description": "creates a new typescript functional component",
+  "parameters": [
+    {
+      "id": "name",
+      "type": "text",
+      "required": true,
+      "initial": "foobar",
+      "description": "the name of the component to create"
+    }
+  ]
+}

@@ -548,10 +548,29 @@ __metadata:
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
     "@suin/semantic-release-yarn": 1.1.0
-    app-root-path: ^3.1.0
+    "@types/watch": ^1
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.5
     typescript: 4.8.3
+    watch: ^1.0.2
+  languageName: unknown
+  linkType: soft
+
+"@picodegallo/recipes-react@workspace:packages/recipes-react":
+  version: 0.0.0-use.local
+  resolution: "@picodegallo/recipes-react@workspace:packages/recipes-react"
+  dependencies:
+    "@dmeents/maestro": 1.4.8
+    "@semantic-release/commit-analyzer": 9.0.2
+    "@semantic-release/git": 10.0.1
+    "@semantic-release/github": 8.0.6
+    "@semantic-release/release-notes-generator": 10.0.3
+    "@suin/semantic-release-yarn": 1.1.0
+    "@types/watch": ^1
+    semantic-release: 19.0.5
+    semantic-release-monorepo: 7.0.5
+    typescript: 4.8.3
+    watch: ^1.0.2
   languageName: unknown
   linkType: soft
 
@@ -773,6 +792,15 @@ __metadata:
   version: 0.12.0
   resolution: "@types/retry@npm:0.12.0"
   checksum: 61a072c7639f6e8126588bf1eb1ce8835f2cb9c2aba795c4491cf6310e013267b0c8488039857c261c387e9728c1b43205099223f160bb6a76b4374f741b5603
+  languageName: node
+  linkType: hard
+
+"@types/watch@npm:^1":
+  version: 1.0.3
+  resolution: "@types/watch@npm:1.0.3"
+  dependencies:
+    "@types/node": "*"
+  checksum: 8655d45bb17089def1f777f82359eb10772652376b817a2c98b2e3b432868289f02817e8fe7d42ec5218719a1d5461b1465f33cda282e96e07b0ee6bf270d26f
   languageName: node
   linkType: hard
 
@@ -2333,6 +2361,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"exec-sh@npm:^0.2.0":
+  version: 0.2.2
+  resolution: "exec-sh@npm:0.2.2"
+  dependencies:
+    merge: ^1.2.0
+  checksum: 3ec5f99c8f7c4bebfeed1a797818f8754de00415d60a99f327e7f970834ca85252c449bf4b2efbff4c11e76eccc6b976a1956a5394a612d8e3d412185f59b0c0
+  languageName: node
+  linkType: hard
+
 "execa@npm:^0.8.0":
   version: 0.8.0
   resolution: "execa@npm:0.8.0"
@@ -3832,6 +3869,13 @@ __metadata:
   version: 1.4.1
   resolution: "merge2@npm:1.4.1"
   checksum: 7268db63ed5169466540b6fb947aec313200bcf6d40c5ab722c22e242f651994619bcd85601602972d3c85bd2cc45a358a4c61937e9f11a061919a1da569b0c2
+  languageName: node
+  linkType: hard
+
+"merge@npm:^1.2.0":
+  version: 1.2.1
+  resolution: "merge@npm:1.2.1"
+  checksum: 2298c4fdcf64561f320b92338681f7ffcafafb579a6e294066ae3e7bd10ae25df363903d2f028072733b9f79a1f75d2b999aef98ad5d73de13641da39cda0913
   languageName: node
   linkType: hard
 
@@ -6114,6 +6158,18 @@ __metadata:
   version: 1.0.0
   resolution: "walk-up-path@npm:1.0.0"
   checksum: b8019ac4fb9ba1576839ec66d2217f62ab773c1cc4c704bfd1c79b1359fef5366f1382d3ab230a66a14c3adb1bf0fe102d1fdaa3437881e69154dfd1432abd32
+  languageName: node
+  linkType: hard
+
+"watch@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "watch@npm:1.0.2"
+  dependencies:
+    exec-sh: ^0.2.0
+    minimist: ^1.2.0
+  bin:
+    watch: ./cli.js
+  checksum: 7ffe99f8bdbd3311d84bdd80d90e74536da90d6b64b339a73dce57884c50527881b83e507e49ab85212682350791999c296fbf2a136b579530046fb97ffb9526
   languageName: node
   linkType: hard
 

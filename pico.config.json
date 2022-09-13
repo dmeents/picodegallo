@@ -1,4 +1,4 @@
 {
   "recipePath": "",
-  "recipes": [ "@picodegallo/recipes-commander" ]
+  "recipes": [ "@picodegallo/recipes-commander", "@picodegallo/recipes-react" ]
 }

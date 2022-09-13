@@ -7,7 +7,7 @@ command
   %arguments%
   %options%
   .action((args, opts) => {
-    console.log("hello world");
+    console.log("hello world!");
   });
 
 command.parse(process.argv);

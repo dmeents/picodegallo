@@ -10,6 +10,7 @@ jobs:
         package:
           - cli
           - recipes-commander
+          - recipes-react
     steps:
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
@@ -35,6 +36,7 @@ jobs:
         package:
           - cli
           - recipes-commander
+          - recipes-react
     steps:
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
