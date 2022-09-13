@@ -548,11 +548,11 @@ __metadata:
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
     "@suin/semantic-release-yarn": 1.1.0
-    "@types/watch": ^1
+    "@types/watch": 1.0.3
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.5
     typescript: 4.8.3
-    watch: ^1.0.2
+    watch: 1.0.2
   languageName: unknown
   linkType: soft
 
@@ -566,11 +566,11 @@ __metadata:
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
     "@suin/semantic-release-yarn": 1.1.0
-    "@types/watch": ^1
+    "@types/watch": 1.0.3
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.5
     typescript: 4.8.3
-    watch: ^1.0.2
+    watch: 1.0.2
   languageName: unknown
   linkType: soft
 
@@ -795,7 +795,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/watch@npm:^1":
+"@types/watch@npm:1.0.3":
   version: 1.0.3
   resolution: "@types/watch@npm:1.0.3"
   dependencies:
@@ -6161,7 +6161,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"watch@npm:^1.0.2":
+"watch@npm:1.0.2":
   version: 1.0.2
   resolution: "watch@npm:1.0.2"
   dependencies:
