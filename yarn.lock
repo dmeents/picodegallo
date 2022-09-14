@@ -72,16 +72,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.4.8":
-  version: 1.4.8
-  resolution: "@dmeents/maestro@npm:1.4.8"
+"@dmeents/maestro@npm:1.4.10":
+  version: 1.4.10
+  resolution: "@dmeents/maestro@npm:1.4.10"
   dependencies:
     "@suin/semantic-release-yarn": ^1.1.0
     lodash: ^4.17.21
   dependenciesMeta:
-    eslint@8.23.0:
+    eslint@8.23.1:
       unplugged: true
-  checksum: b7100221b9f627c4ae7bf13c2e7283192eb7eeb3eee099fb25241d1bde519d6e2d8db56b654c928127d0f45a19a219f6abdee56e43602ed8c05048d2361a2994
+  checksum: be9d8da81d2de1b5f56b83249e15f483958053be7f040480afe3e07ecb0208506e8875ea8e08adac1465818af4a855634cb7844baa0e76fc1c7e1e18c1d2101f
   languageName: node
   linkType: hard
 
@@ -517,7 +517,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.4.8
+    "@dmeents/maestro": 1.4.10
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -542,7 +542,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
   dependencies:
-    "@dmeents/maestro": 1.4.8
+    "@dmeents/maestro": 1.4.10
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -560,7 +560,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-react@workspace:packages/recipes-react"
   dependencies:
-    "@dmeents/maestro": 1.4.8
+    "@dmeents/maestro": 1.4.10
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -4809,7 +4809,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.4.8
+    "@dmeents/maestro": 1.4.10
     "@picodegallo/recipes-commander": "workspace:^"
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
