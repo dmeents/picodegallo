@@ -1,6 +1,6 @@
 const { eslint } = require('@dmeents/maestro');
 
-const { rules, ...other } = eslint({ enableTypescript: true });
+const { rules, ...other } = eslint({ isTypescript: true });
 
 module.exports = {
   ...other,
