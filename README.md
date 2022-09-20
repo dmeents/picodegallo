@@ -1,8 +1,9 @@
 # picodegallo
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dmeents/picodegallo/main?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/dmeents/picodegallo?style=flat-square)
-![GitHub](https://img.shields.io/github/license/dmeents/picodegallo?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dmeents/picodegallo/main?style=flat)
+[![codecov](https://codecov.io/gh/dmeents/picodegallo/branch/main/graph/badge.svg?token=HA45KDZNAK)](https://codecov.io/gh/dmeents/picodegallo)
+![GitHub issues](https://img.shields.io/github/issues/dmeents/picodegallo?style=flat)
+![GitHub](https://img.shields.io/github/license/dmeents/picodegallo?style=flat)
 
 #### Don't write boilerplate ever again - make some pico instead!
 
