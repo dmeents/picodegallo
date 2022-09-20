@@ -13,10 +13,11 @@
     "build": "yarn workspaces foreach -vpti run build",
     "dev": "yarn workspaces foreach -vpti run dev",
     "test": "jest",
+    "test:coverage": "jest --coverage -ci --bail --silent --forceExit",
     "setup": "yarn workspaces foreach -vpti run setup"
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.4.15",
+    "@dmeents/maestro": "1.4.18",
     "@picodegallo/recipes-commander": "workspace:^",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
