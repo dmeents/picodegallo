@@ -2,6 +2,18 @@ name: main
 on: push
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Checkout Maestro Actions
+        uses: actions/checkout@v3
+        with:
+          repository: dmeents/maestro
+          path: ./maestro
+      - name: Test Package
+        uses: ./maestro/src/github-actions/test-standard
+
   build:
     runs-on: ubuntu-latest
     strategy:
