@@ -9,12 +9,12 @@ import {
 import { loadTxt, saveTxt } from '../../utils/files.utils';
 import { promptRequiredOptions } from '../../utils/prompts.utils';
 import { handleIngredient } from './utils/ingredient.utils';
-import { parseParameters } from './utils/parse.utils';
+import { FlatObject, parseParameters } from './utils/parse.utils';
 import { makeReplacements } from './utils/replacement.utils';
 
 const command = new Command();
 
-export interface Options {
+export interface CreateOptions {
   target: string;
   parameters: Array<string>;
   dryRun: boolean;
@@ -29,6 +29,30 @@ export interface Options {
  * TODO: allow commas in param/ingredient option values
  * TODO: user defined split character
  */
+export const createAction = async (args: string, opts: CreateOptions) => {
+  const recipePath = getRecipePath(getPicoConfig(), args);
+  const recipeConfig = getRecipeConfig(recipePath);
+  const base = loadTxt(`${recipePath}/base.txt`);
+
+  const paramValues = parseParameters(opts.parameters || ['']);
+  let picodegallo = await makeReplacements(recipeConfig, base, paramValues);
+
+  for (const ingredient of recipeConfig.ingredients || []) {
+    picodegallo = await handleIngredient(ingredient, picodegallo, recipePath);
+  }
+
+  const options = {
+    ...opts,
+    ...(await promptRequiredOptions(opts as unknown as FlatObject, ['target'])),
+  };
+
+  if (opts.dryRun) {
+    console.log(picodegallo);
+  } else {
+    saveTxt(options.target, picodegallo);
+  }
+};
+
 command
   .name('create')
   .argument('recipe')
@@ -41,28 +65,6 @@ command
     '-p, --parameters <param=value...>',
     'a space delimited string of parameter=value pairs that will be used instead of prompting for input (eg, name=helloWorld)',
   )
-  .action(async (args, opts: Options) => {
-    const recipePath = getRecipePath(getPicoConfig(), args);
-    const recipeConfig = getRecipeConfig(recipePath);
-    const base = loadTxt(`${recipePath}/base.txt`);
-
-    const paramValues = parseParameters(opts.parameters || ['']);
-    let picodegallo = await makeReplacements(recipeConfig, base, paramValues);
-
-    for (const ingredient of recipeConfig.ingredients || []) {
-      picodegallo = await handleIngredient(ingredient, picodegallo, recipePath);
-    }
-
-    const options = {
-      ...opts,
-      ...(await promptRequiredOptions(opts, ['target'])),
-    };
-
-    if (opts.dryRun) {
-      console.log(picodegallo);
-    } else {
-      saveTxt(options.target, picodegallo);
-    }
-  });
+  .action(createAction);
 
 command.parse(process.argv);

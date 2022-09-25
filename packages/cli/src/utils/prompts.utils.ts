@@ -1,12 +1,22 @@
 import prompts, { PromptObject } from 'prompts';
 import { FlatObject } from '../commands/create/utils/parse.utils';
 import { Parameter } from '../interfaces/recipe-config.interface';
+import {
+  invalidPromptInput,
+  missingRequiredInput,
+  promptMessage,
+} from '../messages/prompt.messages';
+
+export const validateInput = (field: Parameter, input: any) => {
+  if (field.required && !input) return invalidPromptInput(field.id);
+  return true;
+};
 
 /**
  * uses the parameters object to compose questions to prompt the user for input
  */
 export const makeQuestionsFromParameters = (
-  target: string,
+  ingredient: string,
   paramValues: FlatObject,
   parameters?: Array<Parameter>,
 ): Array<PromptObject> => {
@@ -17,19 +27,12 @@ export const makeQuestionsFromParameters = (
   );
 
   return promptsToAsk.map(param => {
-    const message = `Enter value for "${target}" [${param.id}] ${
-      param.required ? '(required)' : ''
-    }:`;
-
     return {
-      message,
+      message: promptMessage(ingredient, param.id, param.required),
       type: param.type || 'text',
       name: param.id,
       initial: param.initial,
-      validate: input => {
-        if (param.required && !input) return `Must include a ${param.id}!`;
-        return true;
-      },
+      validate: input => validateInput(param, input),
     };
   });
 };
@@ -45,20 +48,19 @@ export const promptUser = async (questions: Array<PromptObject>) =>
  * but not provided in the cli
  */
 export const promptRequiredOptions = async (
-  opts: any,
+  opts: FlatObject,
   required: Array<string>,
 ) => {
   const missing = required.filter(opt => !opts[opt]);
+
+  if (missing.length === 0) return [];
 
   return promptUser(
     missing.map(param => ({
       type: 'text',
       name: param,
-      message: `Missing [${param}] (required):`,
-      validate: input => {
-        if (!input) return `Must include a ${param}`;
-        return true;
-      },
+      message: missingRequiredInput(param),
+      validate: input => validateInput({ required: true, id: param }, input),
     })),
   );
 };
