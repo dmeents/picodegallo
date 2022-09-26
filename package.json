@@ -12,7 +12,7 @@
   "scripts": {
     "build": "yarn workspaces foreach -vpti run build",
     "dev": "yarn workspaces foreach -vpti run dev",
-    "test:prepare": "yarn workspace @picodegallo/recipes-commander run build",
+    "test:prepare": "yarn workspace @picodegallo/recipes-commander run build && yarn workspace @picodegallo/recipes-commander run setup",
     "test": "jest",
     "test:coverage": "yarn test:prepare && jest --coverage -ci --bail --silent --forceExit",
     "setup": "yarn workspaces foreach -vpti run setup"

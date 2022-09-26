@@ -52,6 +52,7 @@ export const getRecipePath = (picoConfig: PicoConfig, recipe: string) => {
       } catch {
         throw Error(RECIPE_MODULE_NOT_INSTALLED);
       }
+
       return false;
     });
 
