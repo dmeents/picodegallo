@@ -4,6 +4,10 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        suite: ['jest']
     steps:
       - uses: actions/checkout@v3
       - name: Checkout Maestro Actions
@@ -13,6 +17,8 @@ jobs:
           path: ./maestro
       - name: Test Package
         uses: ./maestro/src/github-actions/test-standard
+        with:
+          testSuite: ${{ matrix.suite }}
 
   build:
     runs-on: ubuntu-latest

@@ -2,6 +2,7 @@
 import localPicoConfig from '../../../../pico.config.json';
 import {
   RECIPE_CONFIG_NOT_FOUND,
+  RECIPE_MODULE_NOT_INSTALLED,
   RECIPE_NOT_FOUND,
 } from '../messages/error.messages';
 import { getPicoConfig, getRecipeConfig, getRecipePath } from './config.utils';
@@ -39,6 +40,15 @@ describe('getRecipePath', () => {
     expect(() => getRecipePath(localPicoConfig, 'nonexistent-recipe')).toThrow(
       RECIPE_NOT_FOUND,
     );
+  });
+
+  it('should throw an error if the input recipe module is not found', () => {
+    expect(() =>
+      getRecipePath(
+        { recipes: ['@picodegallo/imaginary-recipes'] },
+        'commander-command',
+      ),
+    ).toThrow(RECIPE_MODULE_NOT_INSTALLED);
   });
 });
 

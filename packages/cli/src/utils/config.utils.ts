@@ -5,6 +5,7 @@ import { RecipeConfig } from '../interfaces/recipe-config.interface';
 import { RecipeModule } from '../interfaces/recipe-modules.interface';
 import {
   RECIPE_CONFIG_NOT_FOUND,
+  RECIPE_MODULE_NOT_INSTALLED,
   RECIPE_NOT_FOUND,
 } from '../messages/error.messages';
 import { loadJSON } from './files.utils';
@@ -24,28 +25,33 @@ export const getPicoConfig = () => {
  */
 export const getRecipePath = (picoConfig: PicoConfig, recipe: string) => {
   const projectRoot = reqlib.toString();
-  const userDefinedPath = `${projectRoot}/${picoConfig.recipePath}/${recipe}`;
   const activePath = `./recipes/${recipe}`;
 
   // does recipe exist in current directory
   if (fs.existsSync(activePath)) return activePath;
 
   // does recipe exist in picoConfig recipePath
-  if (fs.existsSync(userDefinedPath)) return userDefinedPath;
+  if (picoConfig.recipePath) {
+    const userDefinedPath = `${projectRoot}/${picoConfig?.recipePath}/${recipe}`;
+    if (fs.existsSync(userDefinedPath)) return userDefinedPath;
+  }
 
   // does the recipe exist in any of the provided recipes in the picoConfig
   if (picoConfig.recipes && Array.isArray(picoConfig.recipes)) {
     let foundPath = '';
 
     picoConfig.recipes.find((i: string) => {
-      const { getModuleRecipePath } = require(i) as RecipeModule;
-      const pathToTest = `${getModuleRecipePath()}/${recipe}`;
+      try {
+        const { getModuleRecipePath } = require(i) as RecipeModule;
+        const pathToTest = `${getModuleRecipePath()}/${recipe}`;
 
-      if (fs.existsSync(pathToTest)) {
-        foundPath = pathToTest;
-        return true;
+        if (fs.existsSync(pathToTest)) {
+          foundPath = pathToTest;
+          return true;
+        }
+      } catch {
+        throw Error(RECIPE_MODULE_NOT_INSTALLED);
       }
-
       return false;
     });
 

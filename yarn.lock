@@ -448,10 +448,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.4.19":
-  version: 1.4.19
-  resolution: "@dmeents/maestro@npm:1.4.19"
-  checksum: 7cb76bd1dbfe302a3830b26f4c74f20a243edc6162d70f633b52cf804da25ef47f549723a13f74cec383019367bec84d23dc5240579dddf1ebac947dc14e0755
+"@dmeents/maestro@npm:1.4.20":
+  version: 1.4.20
+  resolution: "@dmeents/maestro@npm:1.4.20"
+  checksum: fcf3d0a6db7461266cc6d64a66bb02415129ef049814ccc7f54638c485a87adc594296f0f9f85017723379ceeab257457e882899deb232dd558f01e4acf2ad90
   languageName: node
   linkType: hard
 
@@ -1190,7 +1190,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.4.19
+    "@dmeents/maestro": 1.4.20
+    "@picodegallo/recipes-commander": "workspace:^"
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -1215,7 +1216,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
   dependencies:
-    "@dmeents/maestro": 1.4.19
+    "@dmeents/maestro": 1.4.20
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -1233,7 +1234,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-react@workspace:packages/recipes-react"
   dependencies:
-    "@dmeents/maestro": 1.4.19
+    "@dmeents/maestro": 1.4.20
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -6650,7 +6651,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.4.19
+    "@dmeents/maestro": 1.4.20
     "@picodegallo/recipes-commander": "workspace:^"
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1

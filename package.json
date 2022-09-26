@@ -17,7 +17,7 @@
     "setup": "yarn workspaces foreach -vpti run setup"
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.4.19",
+    "@dmeents/maestro": "1.4.20",
     "@picodegallo/recipes-commander": "workspace:^",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
