@@ -1191,7 +1191,7 @@ __metadata:
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
     "@dmeents/maestro": 1.4.20
-    "@picodegallo/recipes-commander": "workspace:^"
+    "@picodegallo/recipes-commander": ^1.2.1
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -1212,7 +1212,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@picodegallo/recipes-commander@workspace:^, @picodegallo/recipes-commander@workspace:packages/recipes-commander":
+"@picodegallo/recipes-commander@^1.2.1, @picodegallo/recipes-commander@workspace:^, @picodegallo/recipes-commander@workspace:packages/recipes-commander":
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
   dependencies:
