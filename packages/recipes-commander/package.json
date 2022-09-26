@@ -9,7 +9,7 @@
   "author": "David Meents <david@allido.io>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./.dist & tsc & cp -r ./src ./.dist",
+    "build": "rm -rf ./.dist & tsc --project tsconfig.build.json & cp -r ./src ./.dist",
     "dev": "watch 'yarn build' ./src",
     "release": "semantic-release",
     "setup": "npm install -g ."

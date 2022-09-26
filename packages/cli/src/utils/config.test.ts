@@ -15,14 +15,9 @@ describe('getPicoConfig', () => {
 });
 
 describe('getRecipePath', () => {
-  it('should return a match if the active path contains the recipe', () => {
-    // can't test this
-    expect(true).toBe(true);
-  });
-
   it('should return a match if the userDefinedPath contains the recipe', () => {
     const response = getRecipePath(
-      { recipePath: 'packages/recipes-commander/src/recipes', recipes: [] },
+      { recipePath: 'packages/recipes-commander/src/recipes' },
       'commander-command',
     );
 
@@ -54,7 +49,10 @@ describe('getRecipePath', () => {
 
 describe('getRecipeConfig', () => {
   it('should return the recipe config of a requested path', () => {
-    const recipePath = getRecipePath(localPicoConfig, 'commander-command');
+    const recipePath = getRecipePath(
+      { recipePath: 'packages/recipes-commander/src/recipes' },
+      'commander-command',
+    );
     const response = getRecipeConfig(recipePath);
     expect(response).toHaveProperty('id');
     expect(response.id).toEqual('Commander Command');
