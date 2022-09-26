@@ -13,7 +13,7 @@
     "build": "yarn workspaces foreach -vpti run build",
     "dev": "yarn workspaces foreach -vpti run dev",
     "test": "jest",
-    "test:coverage": "yarn run setup & jest --coverage -ci --bail --silent --forceExit",
+    "test:coverage": "yarn run setup && jest --coverage -ci --bail --silent --forceExit",
     "setup": "yarn workspaces foreach -vpti run setup"
   },
   "devDependencies": {
