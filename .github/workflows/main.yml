@@ -10,13 +10,8 @@ jobs:
         suite: [ 'jest' ]
     steps:
       - uses: actions/checkout@v3
-      - name: Checkout Maestro Actions
-        uses: actions/checkout@v3
-        with:
-          repository: dmeents/maestro
-          path: ./maestro
       - name: Test Package
-        uses: ./maestro/src/github-actions/test-standard
+        uses: dmeents/maestro/src/github-actions/test-standard@main
         with:
           testSuite: ${{ matrix.suite }}
 
@@ -33,13 +28,8 @@ jobs:
     steps:
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
-      - name: Checkout Maestro Actions
-        uses: actions/checkout@v3
-        with:
-          repository: dmeents/maestro
-          path: ./maestro
       - name: Build @picodegallo/cli
-        uses: ./maestro/src/github-actions/build-standard
+        uses: dmeents/maestro/src/github-actions/test-standard@main
         with:
           namespace: '@picodegallo'
           packageName: ${{ matrix.package }}
@@ -63,13 +53,8 @@ jobs:
           fetch-depth: 2
       - name: Get latest code
         run: git pull origin main
-      - name: Checkout Maestro Actions
-        uses: actions/checkout@v3
-        with:
-          repository: dmeents/maestro
-          path: ./maestro
       - name: Release @picodegallo/cli
-        uses: ./maestro/src/github-actions/release-standard
+        uses: dmeents/maestro/src/github-actions/test-standard@main
         with:
           namespace: '@picodegallo'
           packageName: ${{ matrix.package }}
