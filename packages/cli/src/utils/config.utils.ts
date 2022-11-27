@@ -1,14 +1,10 @@
 import reqlib from 'app-root-path';
 import * as fs from 'fs';
-import { PicoConfig } from '../interfaces/pico-config.interface';
-import { RecipeConfig } from '../interfaces/recipe-config.interface';
-import { RecipeModule } from '../interfaces/recipe-modules.interface';
-import {
-  RECIPE_CONFIG_NOT_FOUND,
-  RECIPE_MODULE_NOT_INSTALLED,
-  RECIPE_NOT_FOUND,
-} from '../messages/error.messages';
-import { loadJSON } from './files.utils';
+import {PicoConfig} from '../interfaces/pico-config.interface';
+import {RecipeConfig} from '../interfaces/recipe-config.interface';
+import {RecipeModule} from '../interfaces/recipe-modules.interface';
+import {RECIPE_CONFIG_NOT_FOUND, RECIPE_MODULE_NOT_INSTALLED, RECIPE_NOT_FOUND,} from '../messages/error.messages';
+import {loadJSON} from './files.utils';
 
 /**
  * finds the project root of the current directory and returns a pico config
@@ -41,16 +37,18 @@ export const getRecipePath = (picoConfig: PicoConfig, recipe: string) => {
     let foundPath = '';
 
     picoConfig.recipes.find((i: string) => {
+      let modulePath = '';
+
       try {
         const { getModuleRecipePath } = require(i) as RecipeModule;
-        const pathToTest = `${getModuleRecipePath()}/${recipe}`;
-
-        if (fs.existsSync(pathToTest)) {
-          foundPath = pathToTest;
-          return true;
-        }
+        modulePath = getModuleRecipePath();
       } catch {
         throw Error(RECIPE_MODULE_NOT_INSTALLED);
+      }
+
+      if (fs.existsSync(`${modulePath}/${recipe}`)) {
+        foundPath = `${modulePath}/${recipe}`;
+        return true;
       }
 
       return false;
