@@ -18,7 +18,8 @@
     "setup": "yarn workspaces foreach -vpti run setup"
   },
   "devDependencies": {
-    "@dmeents/maestro": "1.4.21",
+    "@dmeents/maestro": "1.6.3",
+    "@dmeents/semantic-release-yarn": "^1.0.11",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.6",

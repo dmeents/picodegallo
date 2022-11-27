@@ -448,10 +448,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dmeents/maestro@npm:1.4.21":
-  version: 1.4.21
-  resolution: "@dmeents/maestro@npm:1.4.21"
-  checksum: c2741869cc55bf14f3c8973a3a966adb701fbe1648ddb2eb4f12f6c57927ae9bb07ff1a4af6ad4722ead17bc6ca7cf6fc93e35892393b20008ec1da7611532ec
+"@dmeents/maestro@npm:1.6.3":
+  version: 1.6.3
+  resolution: "@dmeents/maestro@npm:1.6.3"
+  checksum: 8392e2e1229d3995307205bfcb20c43cc793836b9efe9e5391ac7c42eb0e06bb93fd4580162309372217ad55672d9daa962b84267574e1240328de909cad2f6d
+  languageName: node
+  linkType: hard
+
+"@dmeents/semantic-release-yarn@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "@dmeents/semantic-release-yarn@npm:1.0.11"
+  dependencies:
+    "@semantic-release/error": ^3.0.0
+    execa: ^5.1.1
+    read-pkg: ^5.2.0
+    semver: ^7.3.8
+  checksum: 079595f5da93d386a300ecd777cf7abb5b93130cacd00dcf761b23c0ba9e9e9b3f8c11d004f5378092c9f08f3f3b93a22972a25bafd5b3df25eedddb904a491d
   languageName: node
   linkType: hard
 
@@ -1212,13 +1224,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/cli@workspace:packages/cli"
   dependencies:
-    "@dmeents/maestro": 1.4.21
+    "@dmeents/maestro": 1.6.3
     "@picodegallo/recipes-commander": "workspace:^"
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
-    "@suin/semantic-release-yarn": 1.1.0
     "@types/node": 18.7.18
     "@types/prompts": 2.4.0
     app-root-path: ^3.1.0
@@ -1238,7 +1249,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-commander@workspace:packages/recipes-commander"
   dependencies:
-    "@dmeents/maestro": 1.4.21
+    "@dmeents/maestro": 1.6.3
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -1256,7 +1267,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@picodegallo/recipes-react@workspace:packages/recipes-react"
   dependencies:
-    "@dmeents/maestro": 1.4.21
+    "@dmeents/maestro": 1.6.3
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -6781,7 +6792,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "picodegallo@workspace:."
   dependencies:
-    "@dmeents/maestro": 1.4.21
+    "@dmeents/maestro": 1.6.3
+    "@dmeents/semantic-release-yarn": ^1.0.11
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
@@ -7479,6 +7491,17 @@ __metadata:
   bin:
     semver: ./bin/semver.js
   checksum: 1b26ecf6db9e8292dd90df4e781d91875c0dcc1b1909e70f5d12959a23c7eebb8f01ea581c00783bbee72ceeaad9505797c381756326073850dc36ed284b21b9
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.3.8":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
   languageName: node
   linkType: hard
 
