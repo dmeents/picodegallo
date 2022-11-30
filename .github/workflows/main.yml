@@ -39,7 +39,7 @@ jobs:
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
       - name: Build @picodegallo/cli
-        uses: dmeents/maestro/src/github-actions/test-standard@main
+        uses: dmeents/maestro/src/github-actions/build-standard@main
         with:
           namespace: '@picodegallo'
           packageName: ${{ matrix.package }}
@@ -68,7 +68,7 @@ jobs:
       - name: Get latest code
         run: git pull origin main
       - name: Release @picodegallo/cli
-        uses: dmeents/maestro/src/github-actions/test-standard@main
+        uses: dmeents/maestro/src/github-actions/release-standard@main
         with:
           namespace: '@picodegallo'
           packageName: ${{ matrix.package }}
