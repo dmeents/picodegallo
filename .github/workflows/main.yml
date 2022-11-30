@@ -9,11 +9,17 @@ jobs:
       matrix:
         suite: [ 'jest' ]
     steps:
+      - name: Collect Workflow Telemetry
+        uses: runforesight/foresight-workflow-kit-action@v1
+        with:
+        api_key: ${{ secrets.FORESIGHT_TOKEN }}
       - uses: actions/checkout@v3
       - name: Test Package
         uses: dmeents/maestro/src/github-actions/test-standard@main
         with:
           testSuite: ${{ matrix.suite }}
+          codeCovSecret: ${{ secrets.CODECOV_TOKEN }}
+          foresightKey: ${{ secrets.FORESIGHT_TOKEN }}
 
   build:
     runs-on: ubuntu-latest
@@ -26,6 +32,10 @@ jobs:
           - recipes-commander
           - recipes-react
     steps:
+      - name: Collect Workflow Telemetry
+        uses: runforesight/foresight-workflow-kit-action@v1
+        with:
+        api_key: ${{ secrets.FORESIGHT_TOKEN }}
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
       - name: Build @picodegallo/cli
@@ -47,6 +57,10 @@ jobs:
           - recipes-commander
           - recipes-react
     steps:
+      - name: Collect Workflow Telemetry
+        uses: runforesight/foresight-workflow-kit-action@v1
+        with:
+        api_key: ${{ secrets.FORESIGHT_TOKEN }}
       - name: Checkout Picodegallo
         uses: actions/checkout@v3
         with:
