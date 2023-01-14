@@ -1235,7 +1235,7 @@ __metadata:
     app-root-path: ^3.1.0
     boxen: ^7.0.0
     chalk: ^5.0.1
-    commander: ^9.4.0
+    commander: ^10.0.0
     prompts: ^2.4.2
     semantic-release: 20.0.2
     semantic-release-monorepo: 7.0.5
@@ -2677,10 +2677,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.4.0":
-  version: 9.4.0
-  resolution: "commander@npm:9.4.0"
-  checksum: a322de584a6ccd1ea83c24f6a660e52d16ffbe2613fcfbb8d2cc68bc9dec637492456d754fe8bb5b039ad843ed8e04fb0b107e581a75f62cde9e1a0ab1546e09
+"commander@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "commander@npm:10.0.0"
+  checksum: 9f6495651f878213005ac744dd87a85fa3d9f2b8b90d1c19d0866d666bda7f735adfd7c2f10dfff345782e2f80ea258f98bb4efcef58e4e502f25f883940acfd
   languageName: node
   linkType: hard
 
